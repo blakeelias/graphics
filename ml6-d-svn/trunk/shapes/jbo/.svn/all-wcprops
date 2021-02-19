@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/329/trunk/shapes/jbo
+END
+geo.h
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/326/trunk/shapes/jbo/geo.h
+END
+ui.h
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/209/trunk/shapes/jbo/ui.h
+END
+draw.h
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/225/trunk/shapes/jbo/draw.h
+END
+script
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/329/trunk/shapes/jbo/script
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/329/trunk/shapes/jbo/main.c
+END
+matrix.c
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/225/trunk/shapes/jbo/matrix.c
+END
+shapes_n_stuff
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/326/trunk/shapes/jbo/shapes_n_stuff
+END
+matrix.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/225/trunk/shapes/jbo/matrix.h
+END
+geo.c
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/329/trunk/shapes/jbo/geo.c
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/225/trunk/shapes/jbo/makefile
+END
+ui.c
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/209/trunk/shapes/jbo/ui.c
+END
+draw.c
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/225/trunk/shapes/jbo/draw.c
+END

@@ -1,0 +1,429 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 84.08      9.77     9.77  2480175     0.00     0.00  line_draw_aa
+  7.14     10.60     0.83   135900     0.01     0.01  matrix_mult_inplace
+  4.22     11.09     0.49  4960320     0.00     0.00  pixel_draw_aa
+  2.84     11.42     0.33    11325     0.03     0.96  render_object
+  0.77     11.51     0.09  4960350     0.00     0.00  matrix_addpoint
+  0.52     11.57     0.06     7550     0.01     0.01  matrix_mult
+  0.17     11.59     0.02     3775     0.01     3.02  render_subtree
+  0.09     11.60     0.01    26425     0.00     0.00  matrix_make_rot_z
+  0.09     11.61     0.01     7550     0.00     0.00  animation_update_scene
+  0.09     11.62     0.01        2     5.00     5.00  parse_object
+  0.00     11.62     0.00    45300     0.00     0.00  matrix_copy
+  0.00     11.62     0.00    26425     0.00     0.00  matrix_make_rot_x
+  0.00     11.62     0.00    26425     0.00     0.00  matrix_make_rot_y
+  0.00     11.62     0.00    18893     0.00     0.00  matrix_new
+  0.00     11.62     0.00    18888     0.00     0.00  matrix_free
+  0.00     11.62     0.00    18875     0.00     0.01  matrix_make_transform
+  0.00     11.62     0.00    18875     0.00     0.00  stack_pop
+  0.00     11.62     0.00    18875     0.00     0.01  stack_push
+  0.00     11.62     0.00     7550     0.00     0.00  animation_update_subtree
+  0.00     11.62     0.00     7550     0.00     0.00  matrix_make_scale
+  0.00     11.62     0.00     7550     0.00     0.01  matrix_make_tform_inv
+  0.00     11.62     0.00     7550     0.00     0.00  matrix_make_translate
+  0.00     11.62     0.00     7550     0.00     0.00  matrix_make_zero
+  0.00     11.62     0.00     3776     0.00     0.00  matrix_make_ident
+  0.00     11.62     0.00     3776     0.00     3.07  screen_main
+  0.00     11.62     0.00     3775     0.00     0.00  process_user_input
+  0.00     11.62     0.00     3775     0.00     0.05  render_get_cam_tform
+  0.00     11.62     0.00     3775     0.00     3.07  render_scene
+  0.00     11.62     0.00        8     0.00     0.00  scene_add_node
+  0.00     11.62     0.00        5     0.00     0.00  obj_kinematics_free
+  0.00     11.62     0.00        5     0.00     0.00  obj_kinematics_new
+  0.00     11.62     0.00        5     0.00     0.00  scene_add_tform
+  0.00     11.62     0.00        3     0.00     0.00  obj_geometry_free
+  0.00     11.62     0.00        3     0.00     0.00  obj_geometry_new
+  0.00     11.62     0.00        3     0.00     0.00  object_free
+  0.00     11.62     0.00        3     0.00     0.00  object_new
+  0.00     11.62     0.00        3     0.00     0.00  scene_add_obj
+  0.00     11.62     0.00        1     0.00     0.00  animation_init
+  0.00     11.62     0.00        1     0.00     0.00  camera_fields_free
+  0.00     11.62     0.00        1     0.00     0.00  camera_fields_init
+  0.00     11.62     0.00        1     0.00     0.00  globals_init
+  0.00     11.62     0.00        1     0.00     0.00  scene_free
+  0.00     11.62     0.00        1     0.00     0.00  screen_init
+  0.00     11.62     0.00        1     0.00     0.00  signals_init
+  0.00     11.62     0.00        1     0.00     0.00  stack_free
+  0.00     11.62     0.00        1     0.00     0.00  stack_init
+  0.00     11.62     0.00        1     0.00    10.00  world_init
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 4 byte(s) for 0.09% of 11.62 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]    100.0    0.00   11.62                 main [1]
+                0.00   11.61    3776/3776        screen_main [2]
+                0.00    0.01       1/1           world_init [18]
+                0.00    0.00       1/1           globals_init [43]
+                0.00    0.00       1/1           signals_init [46]
+                0.00    0.00       1/1           screen_init [45]
+                0.00    0.00       1/1           animation_init [40]
+-----------------------------------------------
+                0.00   11.61    3776/3776        main [1]
+[2]     99.9    0.00   11.61    3776         screen_main [2]
+                0.00   11.60    3775/3775        render_scene [3]
+                0.01    0.00    7550/7550        animation_update_scene [16]
+                0.00    0.00    3775/3775        process_user_input [30]
+                0.00    0.00       1/5           obj_kinematics_free [32]
+                0.00    0.00       1/1           scene_free [44]
+                0.00    0.00       1/1           stack_free [47]
+-----------------------------------------------
+                0.00   11.60    3775/3775        screen_main [2]
+[3]     99.8    0.00   11.60    3775         render_scene [3]
+                0.02   11.39    3775/3775        render_subtree [4]
+                0.00    0.19    3775/3775        render_get_cam_tform [10]
+                0.00    0.00    3775/18875       stack_pop [24]
+-----------------------------------------------
+                               26425             render_subtree [4]
+                0.02   11.39    3775/3775        render_scene [3]
+[4]     98.2    0.02   11.39    3775+26425   render_subtree [4]
+                0.33   10.59   11325/11325       render_object [5]
+                0.00    0.24   18875/18875       matrix_make_transform [9]
+                0.12    0.00   18875/135900      matrix_mult_inplace [7]
+                0.00    0.12   18875/18875       stack_push [11]
+                0.00    0.00   15100/18875       stack_pop [24]
+                0.00    0.00       1/18893       matrix_new [22]
+                               26425             render_subtree [4]
+-----------------------------------------------
+                0.33   10.59   11325/11325       render_subtree [4]
+[5]     94.0    0.33   10.59   11325         render_object [5]
+                9.77    0.49 2480175/2480175     line_draw_aa [6]
+                0.18    0.00   30200/135900      matrix_mult_inplace [7]
+                0.09    0.00 4960350/4960350     matrix_addpoint [13]
+                0.06    0.00    7550/7550        matrix_mult [14]
+                0.00    0.00    7550/7550        matrix_make_zero [28]
+                0.00    0.00    7550/7550        matrix_make_scale [26]
+                0.00    0.00    7550/7550        matrix_make_translate [27]
+                0.00    0.00       1/18893       matrix_new [22]
+-----------------------------------------------
+                9.77    0.49 2480175/2480175     render_object [5]
+[6]     88.3    9.77    0.49 2480175         line_draw_aa [6]
+                0.49    0.00 4960320/4960320     pixel_draw_aa [8]
+-----------------------------------------------
+                0.09    0.00   15100/135900      matrix_make_tform_inv [12]
+                0.09    0.00   15100/135900      render_get_cam_tform [10]
+                0.12    0.00   18875/135900      stack_push [11]
+                0.12    0.00   18875/135900      render_subtree [4]
+                0.18    0.00   30200/135900      render_object [5]
+                0.23    0.00   37750/135900      matrix_make_transform [9]
+[7]      7.1    0.83    0.00  135900         matrix_mult_inplace [7]
+-----------------------------------------------
+                0.49    0.00 4960320/4960320     line_draw_aa [6]
+[8]      4.2    0.49    0.00 4960320         pixel_draw_aa [8]
+-----------------------------------------------
+                0.00    0.24   18875/18875       render_subtree [4]
+[9]      2.0    0.00    0.24   18875         matrix_make_transform [9]
+                0.23    0.00   37750/135900      matrix_mult_inplace [7]
+                0.01    0.00   18875/26425       matrix_make_rot_z [15]
+                0.00    0.00   18875/26425       matrix_make_rot_x [20]
+                0.00    0.00   18875/26425       matrix_make_rot_y [21]
+-----------------------------------------------
+                0.00    0.19    3775/3775        render_scene [3]
+[10]     1.6    0.00    0.19    3775         render_get_cam_tform [10]
+                0.00    0.10    7550/7550        matrix_make_tform_inv [12]
+                0.09    0.00   15100/135900      matrix_mult_inplace [7]
+                0.00    0.00    7550/45300       matrix_copy [19]
+                0.00    0.00    3775/3776        matrix_make_ident [29]
+                0.00    0.00       2/18893       matrix_new [22]
+-----------------------------------------------
+                0.00    0.12   18875/18875       render_subtree [4]
+[11]     1.0    0.00    0.12   18875         stack_push [11]
+                0.12    0.00   18875/135900      matrix_mult_inplace [7]
+                0.00    0.00   37750/45300       matrix_copy [19]
+                0.00    0.00   18875/18893       matrix_new [22]
+-----------------------------------------------
+                0.00    0.10    7550/7550        render_get_cam_tform [10]
+[12]     0.8    0.00    0.10    7550         matrix_make_tform_inv [12]
+                0.09    0.00   15100/135900      matrix_mult_inplace [7]
+                0.00    0.00    7550/26425       matrix_make_rot_z [15]
+                0.00    0.00    7550/26425       matrix_make_rot_y [21]
+                0.00    0.00    7550/26425       matrix_make_rot_x [20]
+-----------------------------------------------
+                0.09    0.00 4960350/4960350     render_object [5]
+[13]     0.8    0.09    0.00 4960350         matrix_addpoint [13]
+-----------------------------------------------
+                0.06    0.00    7550/7550        render_object [5]
+[14]     0.5    0.06    0.00    7550         matrix_mult [14]
+-----------------------------------------------
+                0.00    0.00    7550/26425       matrix_make_tform_inv [12]
+                0.01    0.00   18875/26425       matrix_make_transform [9]
+[15]     0.1    0.01    0.00   26425         matrix_make_rot_z [15]
+-----------------------------------------------
+                0.01    0.00    7550/7550        screen_main [2]
+[16]     0.1    0.01    0.00    7550         animation_update_scene [16]
+                0.00    0.00    7550/7550        animation_update_subtree [25]
+-----------------------------------------------
+                0.01    0.00       2/2           world_init [18]
+[17]     0.1    0.01    0.00       2         parse_object [17]
+                0.00    0.00       6/18893       matrix_new [22]
+                0.00    0.00       6/18888       matrix_free [23]
+                0.00    0.00       2/3           object_new [38]
+-----------------------------------------------
+                0.00    0.01       1/1           main [1]
+[18]     0.1    0.00    0.01       1         world_init [18]
+                0.01    0.00       2/2           parse_object [17]
+                0.00    0.00       5/5           obj_kinematics_new [33]
+                0.00    0.00       5/5           scene_add_tform [34]
+                0.00    0.00       3/3           scene_add_obj [39]
+                0.00    0.00       1/3           object_new [38]
+-----------------------------------------------
+                0.00    0.00    7550/45300       render_get_cam_tform [10]
+                0.00    0.00   37750/45300       stack_push [11]
+[19]     0.0    0.00    0.00   45300         matrix_copy [19]
+-----------------------------------------------
+                0.00    0.00    7550/26425       matrix_make_tform_inv [12]
+                0.00    0.00   18875/26425       matrix_make_transform [9]
+[20]     0.0    0.00    0.00   26425         matrix_make_rot_x [20]
+-----------------------------------------------
+                0.00    0.00    7550/26425       matrix_make_tform_inv [12]
+                0.00    0.00   18875/26425       matrix_make_transform [9]
+[21]     0.0    0.00    0.00   26425         matrix_make_rot_y [21]
+-----------------------------------------------
+                0.00    0.00       1/18893       animation_init [40]
+                0.00    0.00       1/18893       stack_init [48]
+                0.00    0.00       1/18893       render_object [5]
+                0.00    0.00       1/18893       render_subtree [4]
+                0.00    0.00       2/18893       render_get_cam_tform [10]
+                0.00    0.00       6/18893       obj_geometry_new [36]
+                0.00    0.00       6/18893       parse_object [17]
+                0.00    0.00   18875/18893       stack_push [11]
+[22]     0.0    0.00    0.00   18893         matrix_new [22]
+-----------------------------------------------
+                0.00    0.00       1/18888       stack_free [47]
+                0.00    0.00       6/18888       obj_geometry_free [35]
+                0.00    0.00       6/18888       parse_object [17]
+                0.00    0.00   18875/18888       stack_pop [24]
+[23]     0.0    0.00    0.00   18888         matrix_free [23]
+-----------------------------------------------
+                0.00    0.00    3775/18875       render_scene [3]
+                0.00    0.00   15100/18875       render_subtree [4]
+[24]     0.0    0.00    0.00   18875         stack_pop [24]
+                0.00    0.00   18875/18888       matrix_free [23]
+-----------------------------------------------
+                0.00    0.00    7550/7550        animation_update_scene [16]
+[25]     0.0    0.00    0.00    7550         animation_update_subtree [25]
+-----------------------------------------------
+                0.00    0.00    7550/7550        render_object [5]
+[26]     0.0    0.00    0.00    7550         matrix_make_scale [26]
+-----------------------------------------------
+                0.00    0.00    7550/7550        render_object [5]
+[27]     0.0    0.00    0.00    7550         matrix_make_translate [27]
+-----------------------------------------------
+                0.00    0.00    7550/7550        render_object [5]
+[28]     0.0    0.00    0.00    7550         matrix_make_zero [28]
+-----------------------------------------------
+                0.00    0.00       1/3776        stack_init [48]
+                0.00    0.00    3775/3776        render_get_cam_tform [10]
+[29]     0.0    0.00    0.00    3776         matrix_make_ident [29]
+-----------------------------------------------
+                0.00    0.00    3775/3775        screen_main [2]
+[30]     0.0    0.00    0.00    3775         process_user_input [30]
+-----------------------------------------------
+                0.00    0.00       3/8           scene_add_obj [39]
+                0.00    0.00       5/8           scene_add_tform [34]
+[31]     0.0    0.00    0.00       8         scene_add_node [31]
+-----------------------------------------------
+                0.00    0.00       1/5           screen_main [2]
+                0.00    0.00       4/5           scene_free [44]
+[32]     0.0    0.00    0.00       5         obj_kinematics_free [32]
+-----------------------------------------------
+                0.00    0.00       5/5           world_init [18]
+[33]     0.0    0.00    0.00       5         obj_kinematics_new [33]
+-----------------------------------------------
+                0.00    0.00       5/5           world_init [18]
+[34]     0.0    0.00    0.00       5         scene_add_tform [34]
+                0.00    0.00       5/8           scene_add_node [31]
+-----------------------------------------------
+                0.00    0.00       3/3           object_free [37]
+[35]     0.0    0.00    0.00       3         obj_geometry_free [35]
+                0.00    0.00       6/18888       matrix_free [23]
+-----------------------------------------------
+                0.00    0.00       3/3           object_new [38]
+[36]     0.0    0.00    0.00       3         obj_geometry_new [36]
+                0.00    0.00       6/18893       matrix_new [22]
+-----------------------------------------------
+                0.00    0.00       3/3           scene_free [44]
+[37]     0.0    0.00    0.00       3         object_free [37]
+                0.00    0.00       3/3           obj_geometry_free [35]
+                0.00    0.00       1/1           camera_fields_free [41]
+-----------------------------------------------
+                0.00    0.00       1/3           world_init [18]
+                0.00    0.00       2/3           parse_object [17]
+[38]     0.0    0.00    0.00       3         object_new [38]
+                0.00    0.00       3/3           obj_geometry_new [36]
+                0.00    0.00       1/1           camera_fields_init [42]
+-----------------------------------------------
+                0.00    0.00       3/3           world_init [18]
+[39]     0.0    0.00    0.00       3         scene_add_obj [39]
+                0.00    0.00       3/8           scene_add_node [31]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[40]     0.0    0.00    0.00       1         animation_init [40]
+                0.00    0.00       1/18893       matrix_new [22]
+-----------------------------------------------
+                0.00    0.00       1/1           object_free [37]
+[41]     0.0    0.00    0.00       1         camera_fields_free [41]
+-----------------------------------------------
+                0.00    0.00       1/1           object_new [38]
+[42]     0.0    0.00    0.00       1         camera_fields_init [42]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[43]     0.0    0.00    0.00       1         globals_init [43]
+-----------------------------------------------
+                0.00    0.00       1/1           screen_main [2]
+[44]     0.0    0.00    0.00       1         scene_free [44]
+                0.00    0.00       4/5           obj_kinematics_free [32]
+                0.00    0.00       3/3           object_free [37]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[45]     0.0    0.00    0.00       1         screen_init [45]
+                0.00    0.00       1/1           stack_init [48]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[46]     0.0    0.00    0.00       1         signals_init [46]
+-----------------------------------------------
+                0.00    0.00       1/1           screen_main [2]
+[47]     0.0    0.00    0.00       1         stack_free [47]
+                0.00    0.00       1/18888       matrix_free [23]
+-----------------------------------------------
+                0.00    0.00       1/1           screen_init [45]
+[48]     0.0    0.00    0.00       1         stack_init [48]
+                0.00    0.00       1/18893       matrix_new [22]
+                0.00    0.00       1/3776        matrix_make_ident [29]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+
+Index by function name
+
+  [40] animation_init          [9] matrix_make_transform   [5] render_object
+  [16] animation_update_scene [27] matrix_make_translate   [3] render_scene
+  [25] animation_update_subtree [28] matrix_make_zero      [4] render_subtree
+  [41] camera_fields_free     [14] matrix_mult            [31] scene_add_node
+  [42] camera_fields_init      [7] matrix_mult_inplace    [39] scene_add_obj
+  [43] globals_init           [22] matrix_new             [34] scene_add_tform
+   [6] line_draw_aa           [35] obj_geometry_free      [44] scene_free
+  [13] matrix_addpoint        [36] obj_geometry_new       [45] screen_init
+  [19] matrix_copy            [32] obj_kinematics_free     [2] screen_main
+  [23] matrix_free            [33] obj_kinematics_new     [46] signals_init
+  [29] matrix_make_ident      [37] object_free            [47] stack_free
+  [20] matrix_make_rot_x      [38] object_new             [48] stack_init
+  [21] matrix_make_rot_y      [17] parse_object           [24] stack_pop
+  [15] matrix_make_rot_z       [8] pixel_draw_aa          [11] stack_push
+  [26] matrix_make_scale      [30] process_user_input     [18] world_init
+  [12] matrix_make_tform_inv  [10] render_get_cam_tform

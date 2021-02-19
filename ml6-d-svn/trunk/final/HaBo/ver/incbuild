@@ -1,0 +1,10 @@
+#!/bin/bash
+
+cd ver
+
+read buildnum < build.num
+
+buildnum=$((buildnum+1))
+echo $buildnum > build.num
+
+cd ..	

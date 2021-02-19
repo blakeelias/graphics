@@ -1,0 +1,13 @@
+what works:
+     TRIANGLES--I mean, doritos.  There's a slight bug with the torus where part of it doesn't quite connect, but I decided that it was going to be something stupid and it was more useful to move onto something else than spend the time trying to fix it.  This is visible in the file torusTestBugInBackLeft.png.
+     BACKFACE CULLING--visibile in both torusTestBugInBackLeft.png and oneSphereTestColoredTriangles.png.
+     SCANLINE CONVERSION--I ended up not doing it how we had discussed in class.  I used the fact that there were only three points instead of pretending there were four.  MANY MANY MANY thanks to Blake for the suggestion.  This is visible in oneSphereTestColoredTriangles.png
+
+what doesn't:
+     KNOBS/ANIMATION--It got a little too complicated to try to get Vishal's code because of the whole no SVN thing as well as test it, since my guess is I would have had to ssh into homer a lot.
+     Z-BUFFERINNG--I couldn't see a good way to do it.  As far as I could tell, there is no way to access the array of pixels using Graphics2D and its drawLine() to either see what's there or edit it.
+
+what sort of does:
+     LIGHTING--I was unable to understand how the constants worked in mdl, so I set global constants for the lighting.
+
+If I had more time, I'd fix a couple of shortcuts that I tried to take that were a bit dumb.  The view vector should be something extremely global instead of being manually constructed in two places.  Also, all the backface culling stuff should use the Vector class.  It currently uses the same methods, but not the class.  oneSphereTest.png shows what it looks like now.  It's magenta because it was the best color.  To run, run make, then "java mdl < *insert your favorite test class here, probably oneSphereTest*"

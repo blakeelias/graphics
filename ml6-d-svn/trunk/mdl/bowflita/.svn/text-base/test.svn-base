@@ -1,0 +1,11 @@
+basename anim
+frames 50
+scale 2 2 2 knob1
+rotate x 30 knob1
+rotate y 60 knob1
+rotate z 90 knob1
+move 20 20 20 knob1
+sphere 0 0 0 100
+box 50 50 50 100 100 100
+vary knob1 0 50 0 1
+save anim

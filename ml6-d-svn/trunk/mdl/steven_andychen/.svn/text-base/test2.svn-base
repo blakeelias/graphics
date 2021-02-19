@@ -1,0 +1,13 @@
+push
+rotate x 360 xrot
+rotate y 360 yrot
+rotate z 360 zrot
+scale 4 4 4 scaleknob
+move 100 200 0 moveknob
+box 0 0 0 50 50 50
+set xrot .3
+set yrot .3
+set zrot 0
+set moveknob 1
+set scaleknob .5
+display

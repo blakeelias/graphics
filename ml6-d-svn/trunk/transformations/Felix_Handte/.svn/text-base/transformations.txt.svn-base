@@ -1,0 +1,27 @@
+Rotation about z:
+
+[ cos(t) -sin(t) 0 0 ]   [ x1 x2 x3 ... ]
+[ sin(t)  cos(t) 0 0 ] . [ y1 y2 y3 ... ]
+[   0       0    1 0 ]   [ z1 z2 z3 ... ]
+[   0       0    0 1 ]   [ 1  1  1  ... ]
+
+Rotation about y:
+
+[  cos(t) 0 sin(t) 0 ]   [ x1 x2 x3 ... ]
+[    0    1   0    0 ] . [ y1 y2 y3 ... ]
+[ -sin(t) 0 cos(t) 0 ]   [ z1 z2 z3 ... ]
+[    0    0   0    1 ]   [ 1  1  1  ... ]
+
+Rotation about x:
+
+[ 1   0       0    0 ]   [ x1 x2 x3 ... ]
+[ 0 cos(t) -sin(t) 0 ] . [ y1 y2 y3 ... ]
+[ 0 sin(t)  cos(t) 0 ]   [ z1 z2 z3 ... ]
+[ 0   0       0    1 ]   [ 1  1  1  ... ]
+
+Translation:
+
+[ 1 0 0 v_x ]   [ x1 x2 x3 ... ]
+[ 0 1 0 v_y ] . [ y1 y2 y3 ... ]
+[ 0 0 1 v_z ]   [ z1 z2 z3 ... ]
+[ 0 0 0  1  ]   [ 1  1  1  ... ]

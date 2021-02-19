@@ -1,0 +1,41 @@
+frames 100
+basename zergling
+push
+move 20 50 0 movexknob
+sphere 170 110 150 7
+push
+rotate z 10 legrot
+push
+rotate z -15 
+move 240 170 100
+box 0 0 0 15 40 20
+move 120 0 0
+box 0 0 0 15 40 20
+pop
+push
+move 250 200 100
+box 0 0 0 15 40 20
+move 120 0 0
+box 0 0 0 15 40 20
+pop
+push
+move 215 230 100
+box 0 0 0 40 20 20
+move 120 0 0
+box 0 0 0 40 20 20
+pop
+pop
+push
+box 400 100 100 80 25 20
+rotate z 10 tailrot
+box 480 95 100 60 20 20
+rotate z 20 tailrot
+pop
+box 200 100 100 200 75 50
+box 150 90 80 90 40 30
+vary movexknob 0 49 0 1
+vary movexknob 50 99 1 0
+vary legrot 0 24 0 -1
+vary legrot 25 99 -1 1
+vary tailrot 0 49 0 .1
+vary tailrot 50 99 .1 0

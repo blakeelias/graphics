@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/729/trunk/final/HaBo/ver
+END
+failedmakes.num
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/729/trunk/final/HaBo/ver/failedmakes.num
+END
+version.num
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/635/trunk/final/HaBo/ver/version.num
+END
+incbuild
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/618/trunk/final/HaBo/ver/incbuild
+END
+incmakes
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/619/trunk/final/HaBo/ver/incmakes
+END
+makever
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/618/trunk/final/HaBo/ver/makever
+END
+segfaults.num
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/729/trunk/final/HaBo/ver/segfaults.num
+END
+decmakes
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/619/trunk/final/HaBo/ver/decmakes
+END
+build.num
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/729/trunk/final/HaBo/ver/build.num
+END

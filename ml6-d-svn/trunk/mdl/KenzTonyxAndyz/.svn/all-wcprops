@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/578/trunk/mdl/KenzTonyxAndyz
+END
+mdl.y
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/545/trunk/mdl/KenzTonyxAndyz/mdl.y
+END
+symtab.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/448/trunk/mdl/KenzTonyxAndyz/symtab.h
+END
+MDL.spec
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/434/trunk/mdl/KenzTonyxAndyz/MDL.spec
+END
+matrix.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/578/trunk/mdl/KenzTonyxAndyz/matrix.c
+END
+mdl.l
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/434/trunk/mdl/KenzTonyxAndyz/mdl.l
+END
+PROJECT
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/434/trunk/mdl/KenzTonyxAndyz/PROJECT
+END
+my_main.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/578/trunk/mdl/KenzTonyxAndyz/my_main.c
+END
+matrix.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/578/trunk/mdl/KenzTonyxAndyz/matrix.h
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/434/trunk/mdl/KenzTonyxAndyz/README
+END
+test
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/434/trunk/mdl/KenzTonyxAndyz/test
+END
+symtab.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/528/trunk/mdl/KenzTonyxAndyz/symtab.c
+END
+configure
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/545/trunk/mdl/KenzTonyxAndyz/configure
+END
+parser.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/514/trunk/mdl/KenzTonyxAndyz/parser.h
+END

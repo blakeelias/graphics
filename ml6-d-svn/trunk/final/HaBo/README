@@ -1,0 +1,16 @@
+HABO SIM
+version 0.0.3.b
+
+NOTE: Before Making, do the following:
+touch make/genMakefile.php
+
+Not much to see yet. Surfaces and proper aerodynamics are on the way. For now, enjoy wireframe spaceflight as a temporary diversion.
+
+Keep in mind Newton's laws, the lack of air resistance in space, and the fact that all controls are thrusters.
+
+Translation:
+Spacebar/Left shift
+Arrow keys
+
+Rotation:
+W/S, A/D, Q/E

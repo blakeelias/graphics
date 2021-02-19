@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/558/trunk/transformations/costin
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/555/trunk/transformations/costin/Makefile
+END
+draw.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/558/trunk/transformations/costin/draw.c
+END
+draw_skeleton.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/555/trunk/transformations/costin/draw_skeleton.c
+END
+draw.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/558/trunk/transformations/costin/draw.h
+END
+main
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/558/trunk/transformations/costin/main
+END
+ml6.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/555/trunk/transformations/costin/ml6.h
+END
+script
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/555/trunk/transformations/costin/script
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/558/trunk/transformations/costin/main.c
+END
+matrix.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/556/trunk/transformations/costin/matrix.c
+END
+display.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/555/trunk/transformations/costin/display.c
+END
+matrix_skeleton.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/556/trunk/transformations/costin/matrix_skeleton.c
+END
+cube.ppm
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/555/trunk/transformations/costin/cube.ppm
+END
+matrix.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/555/trunk/transformations/costin/matrix.h
+END
+display.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/555/trunk/transformations/costin/display.h
+END

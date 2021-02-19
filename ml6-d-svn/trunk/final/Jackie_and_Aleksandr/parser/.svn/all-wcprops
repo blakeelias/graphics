@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/767/trunk/final/Jackie_and_Aleksandr/parser
+END
+TokenMgrError.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/767/trunk/final/Jackie_and_Aleksandr/parser/TokenMgrError.java
+END
+SimpleCharStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/767/trunk/final/Jackie_and_Aleksandr/parser/SimpleCharStream.java
+END
+Token.class
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/767/trunk/final/Jackie_and_Aleksandr/parser/Token.class
+END
+MdlParserTokenManager.class
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/767/trunk/final/Jackie_and_Aleksandr/parser/MdlParserTokenManager.class
+END
+MdlParserConstants.class
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/767/trunk/final/Jackie_and_Aleksandr/parser/MdlParserConstants.class
+END
+MdlParser.class
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/767/trunk/final/Jackie_and_Aleksandr/parser/MdlParser.class
+END
+ParseException.class
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/767/trunk/final/Jackie_and_Aleksandr/parser/ParseException.class
+END
+parser.jj
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/767/trunk/final/Jackie_and_Aleksandr/parser/parser.jj
+END
+Token.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/767/trunk/final/Jackie_and_Aleksandr/parser/Token.java
+END
+TokenMgrError.class
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/767/trunk/final/Jackie_and_Aleksandr/parser/TokenMgrError.class
+END
+MdlParserTokenManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/767/trunk/final/Jackie_and_Aleksandr/parser/MdlParserTokenManager.java
+END
+MdlParserConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/767/trunk/final/Jackie_and_Aleksandr/parser/MdlParserConstants.java
+END
+SimpleCharStream.class
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/767/trunk/final/Jackie_and_Aleksandr/parser/SimpleCharStream.class
+END
+ParseException.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/767/trunk/final/Jackie_and_Aleksandr/parser/ParseException.java
+END
+MdlParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/767/trunk/final/Jackie_and_Aleksandr/parser/MdlParser.java
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/767/trunk/final/Jackie_and_Aleksandr/parser/Makefile
+END

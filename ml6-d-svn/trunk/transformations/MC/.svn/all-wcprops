@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/162/trunk/transformations/MC
+END
+pic.png
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/162/trunk/transformations/MC/pic.png
+END
+script
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/162/trunk/transformations/MC/script
+END
+matrix_DM.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/162/trunk/transformations/MC/matrix_DM.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/162/trunk/transformations/MC/main.c
+END
+cube.ppm
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/162/trunk/transformations/MC/cube.ppm
+END
+matrix_skeleton_DM.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/162/trunk/transformations/MC/matrix_skeleton_DM.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/162/trunk/transformations/MC/Makefile
+END
+draw.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/162/trunk/transformations/MC/draw.c
+END
+tProj.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/162/trunk/transformations/MC/tProj.c
+END
+draw_skeleton.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/162/trunk/transformations/MC/draw_skeleton.c
+END
+draw.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/162/trunk/transformations/MC/draw.h
+END
+main
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/162/trunk/transformations/MC/main
+END
+ml6.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/162/trunk/transformations/MC/ml6.h
+END
+matrix.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/162/trunk/transformations/MC/matrix.c
+END
+display.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/162/trunk/transformations/MC/display.c
+END
+script2
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/162/trunk/transformations/MC/script2
+END
+g
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/162/trunk/transformations/MC/g
+END
+matrix_skeleton.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/162/trunk/transformations/MC/matrix_skeleton.c
+END
+matrix.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/162/trunk/transformations/MC/matrix.h
+END
+display.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/162/trunk/transformations/MC/display.h
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/162/trunk/transformations/MC/README
+END

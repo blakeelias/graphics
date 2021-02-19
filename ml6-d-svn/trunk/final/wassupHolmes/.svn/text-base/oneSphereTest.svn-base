@@ -1,0 +1,5 @@
+push
+rotate x 45
+sphere 200 200 0 75
+pop
+save oneSphereTest.png

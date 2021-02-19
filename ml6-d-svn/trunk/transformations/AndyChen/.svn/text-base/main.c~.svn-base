@@ -1,0 +1,187 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <string.h>
+
+#include "matrix.h"
+#include "ml6.h"
+#include "display.h"
+#include "draw.h"
+
+void parse_file ( char * filename, 
+		  struct matrix * transform, 
+		  struct matrix * pm,
+		  screen s);
+
+int main() {
+
+  struct matrix *translation, *point_matrix;
+ 
+  screen s;
+  
+  translation = new_matrix(4, 4);
+  point_matrix = new_matrix(4, 1);
+  parse_file("script", translation, point_matrix, s);
+  print_matrix(point_matrix);
+  print_matrix(translation);
+
+  //The following tests various matrix functions
+  
+  /* m = new_matrix(r, c);
+  a = new_matrix(r, c);  
+
+  for (r=0; r < m->rows; r++)
+    for (c=0; c < m->cols; c++)
+      m->m[r][c] = 5;
+  
+  print_matrix(m);
+  printf("\n");
+
+  ident(m);
+  print_matrix(m);
+  printf("\n");
+
+  scalar_mult(7, m);
+  print_matrix(m);
+  printf("\n");
+
+  copy_matrix(m, a);
+  print_matrix(a);
+  printf("\n");
+
+  ident(m);
+
+  matrix_mult(a, m);
+  print_matrix(a);
+  printf("\n");
+
+
+  free_matrix(a);
+  free_matrix(m);
+  
+  translation = make_translate(4,5,17);
+  print_matrix(translation);
+
+  scale = make_scale(4,6,11);
+  print_matrix(scale);
+  
+  rotx = make_rotX(90);
+  print_matrix(rotx);
+  
+  roty = make_rotY(90);
+  print_matrix(roty);
+
+  rotz = make_rotZ(90);
+  print_matrix(rotz);*/
+  
+  return 0;
+}
+
+void parse_file ( char * filename, 
+	     struct matrix * transform, 
+	     struct matrix * pm,
+	     screen s) {
+ 
+  FILE *input = fopen(filename, "r");
+  char *line[30][30];
+  int count,i;
+  
+  //create an array of strings representing file
+  for(i=0;fgets(line[i], 30, input)!=NULL;i++)
+    {
+      
+    }
+  count = i;
+  printf("%d\n",count);
+  //loop through the array of lines of the file
+  for(i=0;i<count;i++)
+    {
+      
+      if (strcmp(line[i],"l\n")==0)
+	{ i++;
+	  char * temp;
+	  int conversion;
+	  //first point
+	  temp = strtok(line[i], " "); 
+	  conversion = atoi(temp);
+	  pm -> m[0][pm->lastcol] = conversion;
+	  printf("%d",conversion);
+
+	  temp = strtok(NULL, " "); 
+	  conversion = atoi(temp);
+	  pm -> m[1][pm->lastcol] = conversion;
+	  printf("%d", conversion);
+	  
+	  temp = strtok(NULL, " "); 
+	  conversion = atoi(temp);
+	  pm -> m[2][pm->lastcol] = conversion;
+	  printf("%d", conversion);
+	  
+	  pm -> m[3][pm->lastcol] = 1;
+	  pm->lastcol++;
+	  grow_matrix(pm, pm->lastcol + 1);
+
+	  //second point
+    	  temp = strtok(NULL, " "); 
+	  conversion = atoi(temp);
+	  pm -> m[0][pm->lastcol] = conversion;
+	  printf("%d", conversion);
+	  
+	  temp = strtok(NULL, " "); 
+	  conversion = atoi(temp);
+	  pm -> m[1][pm->lastcol] = conversion;
+	  printf("%d", conversion);
+	  
+	  temp = strtok(NULL, " "); 
+	  conversion = atoi(temp);
+	  pm -> m[2][pm->lastcol] = conversion;
+	  printf("%d", conversion);
+	  pm -> m[3][pm->lastcol] = 1;
+	  pm -> lastcol ++;
+	  grow_matrix(pm, pm->lastcol + 1);
+	  printf("\n");
+	}
+      if(strcmp(line[i],"i\n")==0)
+	{
+	  ident(transform);}
+      	if(strcmp(line[i],"s\n")==0)
+	  {
+	    matrix *transformationtemp;
+	    i++;
+	  char * temp;
+	  int conversionx,conversiony,conversionz;
+          temp = strtok(line[i], " "); 
+	  conversionx = atoi(temp);
+	  printf("%d",conversionx);
+
+	  temp = strtok(NULL, " "); 
+	  conversiony = atoi(temp);
+	  printf("%d", conversiony);
+	  
+	  temp = strtok(NULL, " "); 
+	  conversionz = atoi(temp);
+	  
+	  printf("%d\n", conversionz);
+	  transformationtemp =
+	    make_scale(conversionz, conversiony, conversionz); 
+	  print_matrix(transformationtemp);
+	  
+	}
+	/*if(strcmp(line[i],"t\n")==0)
+	{}
+    if(strcmp(line[i],"x\n")==0)
+	{}
+       if(strcmp(line[i],"y\n")==0)
+	{}
+       if(strcmp(line[i],"z\n")==0)
+	{}
+      if(strcmp(line[i],"a\n")==0)
+	{}
+      if(strcmp(line[i],"v\n")==0)
+	{}
+      if(strcmp(line[i],"g\n")==0)
+	{}
+	// printf(line[i]);*/
+    }
+  
+  }  

@@ -1,0 +1,16 @@
+
+draw_polygons:
+accept 3 coords, connect them
+
+
+backface culling:
+construct vector from vantage point to normal, measure angle
+
+
+scan line conversion:
+start from bottom, move upwards and fill
+
+
+
+hidden surface removal:
+construct array of z-values

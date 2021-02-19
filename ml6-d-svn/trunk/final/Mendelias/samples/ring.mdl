@@ -1,0 +1,22 @@
+basename ring
+frames 100
+
+push
+rotate x 360 xknob
+move 100 100 0
+
+torus 0 0 0 25 100
+
+pop
+push
+
+move 150 0 0
+rotate y 360 yknob
+move 180 100 0
+box 0 0 0 100 100 100
+
+vary yknob 0 99 0 1
+vary xknob 0 99 0 1
+
+//display
+//save sphere.png

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+cd ver
+
+read failedmakes < failedmakes.num
+
+failedmakes=$((failedmakes+1))
+echo $failedmakes > failedmakes.num
+
+cd ..

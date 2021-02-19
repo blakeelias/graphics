@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/293/trunk/shapes/slouie
+END
+matrix.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/220/trunk/shapes/slouie/matrix.h
+END
+display.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/220/trunk/shapes/slouie/display.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/220/trunk/shapes/slouie/Makefile
+END
+draw.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/293/trunk/shapes/slouie/draw.c
+END
+.nfs0000000000256e260000002b
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/220/trunk/shapes/slouie/.nfs0000000000256e260000002b
+END
+draw.h
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/220/trunk/shapes/slouie/draw.h
+END
+main
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/293/trunk/shapes/slouie/main
+END
+ml6.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/274/trunk/shapes/slouie/ml6.h
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/293/trunk/shapes/slouie/main.c
+END
+matrix.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/274/trunk/shapes/slouie/matrix.c
+END
+display.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/220/trunk/shapes/slouie/display.c
+END

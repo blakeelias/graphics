@@ -1,0 +1,607 @@
+package nonMDL;
+
+import java.io.*;
+import java.util.*;
+import java.lang.Math.*;
+
+public class PointMatrix extends Matrix {
+
+    private int lastCol;
+
+    public PointMatrix() {
+	super();
+	lastCol = 0;
+    }
+
+    public PointMatrix( int c ) {
+	super( c );
+	lastCol = 0;
+    }
+
+    public PointMatrix (double x, double y, double z){
+	super(1);
+	m[0][0] = x;
+	m[1][0] = y;
+	m[2][0] = z;
+	lastCol = 1;
+    }
+
+    // draws a rectangular prism with one corner at point (x, y, z) and length length, height heigh, and depth depth
+    public void generateBoxLinesOnly(double x, double y, double z, double length, double height, double depth){
+	addEdge(x, y, z,
+		x+length, y, z);
+	addEdge(x, y, z,
+		x, y+height, z);
+	addEdge(x, y, z,
+		x, y, z+depth);
+	addEdge(x+length, y+height, z+depth,
+		x, y+height, z+depth);
+	addEdge(x+length, y+height, z+depth,
+		x+length, y, z+depth);
+	addEdge(x+length, y+height, z+depth,
+		x+length, y+height, z);
+	addEdge(x, y, z+depth,
+		x, y+height, z+depth);
+	addEdge(x, y, z+depth,
+		x+length, y, z+depth);
+	addEdge(x+length, y+height, z,
+		x, y+height, z);
+	addEdge(x+length, y+height, z,
+		x+length, y, z);
+	addEdge(x+length, y, z+depth,
+		x+length, y, z);
+	addEdge(x, y+height, z+depth,
+		x, y+height, z);
+    }
+
+// draws a rectangular prism with one corner at point (x, y, z) and length length, height heigh, and depth depth using triangles instead of just lines
+    public void generateBox(double x, double y, double z, double length, double height, double depth){
+	addTriangle(x, y, z, x+length, y+height, z, x+length, y, z);
+	addTriangle(x+length, y, z, x+length, y+height, z, x+length, y, z+depth);
+	addTriangle(x+length, y, z+depth, x+length, y+height, z, x+length, y+height, z+depth);
+	addTriangle(x, y+height, z, x, y+height, z+depth, x+length, y+height, z);
+	addTriangle(x+length, y+height, z, x, y+height, z+depth, x+length, y+height, z+depth);
+	addTriangle(x, y, z, x+length, y, z, x+length, y, z+depth);
+	addTriangle(x, y, z, x+length, y, z+depth, x, y, z+depth);
+	addTriangle(x, y, z, x, y+height, z+depth, x, y+height, z);
+	addTriangle(x, y, z, x, y, z+depth, x, y+height, z+depth);
+	addTriangle(x, y, z+depth, x+length, y, z+depth, x+length, y+height, z+depth);
+	addTriangle(x, y, z+depth, x+length, y+height, z+depth, x, y+height, z+depth);
+	addTriangle(x, y, z, x, y+height, z, x+length, y+height, z);
+    }
+
+
+    // plot a hermite curve between (x1, y1) and (x3, y3), using (x2, y2) and (x4, y4) to define tangents
+    public void hermiteCurve(double x1, double y1, double x2, double y2, double x3, double y3, double x4, double y4) {
+
+	// in row major order
+	Matrix inverse = new Matrix();
+	inverse.m[0][0] = 2;
+	inverse.m[0][1] = -2;
+	inverse.m[0][2] = 1;
+	inverse.m[0][3] = 1;
+	inverse.m[1][0] = -3;
+	inverse.m[1][1] = 3;
+	inverse.m[1][2] = -2;
+	inverse.m[1][3] = -1;
+	inverse.m[2][0] = 0;
+	inverse.m[2][1] = 0;
+	inverse.m[2][2] = 1;
+	inverse.m[2][3] = 0;
+	inverse.m[3][0] = 1;
+	inverse.m[3][1] = 0;
+	inverse.m[3][2] = 0;
+	inverse.m[3][3] = 0;
+
+	// in column major order
+	Matrix multiplicand = new Matrix(2);
+	// x values
+	multiplicand.m[0][0] = x1;
+	multiplicand.m[1][0] = x3;
+	multiplicand.m[2][0] = x2 - x1;
+	multiplicand.m[3][0] = x4 - x3;
+	// y values
+	multiplicand.m[0][1] = y1;
+	multiplicand.m[1][1] = y3;
+	multiplicand.m[2][1] = y2 - y1;
+	multiplicand.m[3][1] = y4 - y3;
+
+	curvify(inverse, multiplicand);
+    }
+    
+    // plot a bezier curve between (x1, y1) and (x3, y3), using (x2, y2) and (x4, y4) to pull the curve
+    public void bezierCurve(double x1, double y1, double x2, double y2, double x3, double y3, double x4, double y4) {
+
+	// in row major order
+	Matrix inverse = new Matrix();
+	inverse.m[0][0] = -1;
+	inverse.m[0][1] = 3;
+	inverse.m[0][2] = -3;
+	inverse.m[0][3] = 1;
+	inverse.m[1][0] = -3;
+	inverse.m[1][1] = -6;
+	inverse.m[1][2] = 3;
+	inverse.m[1][3] = 0;
+	inverse.m[2][0] = -3;
+	inverse.m[2][1] = 3;
+	inverse.m[2][2] = 0;
+	inverse.m[2][3] = 0;
+	inverse.m[3][0] = 1;
+	inverse.m[3][1] = 0;
+	inverse.m[3][2] = 0;
+	inverse.m[3][3] = 0;
+
+	// in column major order
+	Matrix multiplicand = new Matrix(2);
+	// x values
+	multiplicand.m[0][0] = x1;
+	multiplicand.m[1][0] = x2;
+	multiplicand.m[2][0] = x3;
+	multiplicand.m[3][0] = x4;
+	// y values
+	multiplicand.m[0][1] = y1;
+	multiplicand.m[1][1] = y2;
+	multiplicand.m[2][1] = y3;
+	multiplicand.m[3][1] = y4;
+
+	curvify(inverse, multiplicand);
+    }
+
+    // curvify generates the points on the curve in the proper order and appends them to the PointMatrix given an inverse matrix and points or mainipulations of them
+    private void curvify(Matrix inverse, Matrix multiplicand){
+	final double step = .05;
+	multiplicand.matrixMult(inverse);
+	double ax = multiplicand.m[0][0];
+	double bx = multiplicand.m[1][0];
+	double cx = multiplicand.m[2][0];
+	double dx = multiplicand.m[3][0];
+	double ay = multiplicand.m[0][1];
+	double by = multiplicand.m[1][1];
+	double cy = multiplicand.m[2][1];
+	double dy = multiplicand.m[3][1];
+
+	addEdge(dx, dy, 0,
+		ax * step*step*step + bx * step*step + cx * step + dx,
+		ay * step*step*step + by * step*step + cy * step + dy,
+		0);
+
+	for (double t = step; t < 1; t += step){
+	    addEdge(m[0][lastCol-1],
+		    m[1][lastCol-1],
+		    m[2][lastCol-1],
+		    ax * t*t*t + bx * t*t + cx * t + dx,
+		    ay * t*t*t + by * t*t + cy * t + dy,
+		    0);
+	}
+    }
+
+    public void renderTorusMesh(double r1, double r2, 
+				double offx, double offy, double step) {
+    }		
+
+  //makes a torus	
+    public void generateTorus(double rTorus, double rCircle, double offx, double offy) {
+	final int nPhiSteps = 10; // number of times circle gets rotated (larger number --> smoother surface of torus)
+	final int nThetaSteps = 10; // number of points on the circle (larger number --> smoother curve)
+	PointMatrix[] circles = new PointMatrix[nPhiSteps + 2]; // each circle is its own PointMatrix
+
+	// INITIALIZES AN ARRAY OF THE TORUS'S POINTS
+	for (int iCircle = 0; iCircle < nPhiSteps; iCircle++){
+	    circles[iCircle] = new PointMatrix();
+	    double phi = iCircle * 2*Math.PI/nPhiSteps;
+	    for (int iThetaStep = 0; iThetaStep <= nThetaSteps; iThetaStep++ ){
+		double theta = iThetaStep * 2*Math.PI/nThetaSteps;
+		circles[iCircle].addPoint(rTorus * Math.cos(phi) + rCircle * Math.cos(theta) * Math.cos(phi) + offx,
+					      rCircle * Math.sin(theta) + offy,
+					      -rTorus * Math.sin(phi) - rCircle * Math.cos(theta) * Math.sin(phi));
+	     }
+	}
+	circles[nPhiSteps] = new PointMatrix();
+	double phi = 0 * 2*Math.PI/nPhiSteps;
+	for (int iThetaStep = 0; iThetaStep < nThetaSteps; iThetaStep++ ){
+	    double theta = iThetaStep * 2*Math.PI/nThetaSteps;
+	    circles[nPhiSteps].addPoint(rTorus * Math.cos(phi) + rCircle * Math.cos(theta) * Math.cos(phi) + offx,
+				      rCircle * Math.sin(theta) + offy,
+				      -rTorus * Math.sin(phi) - rCircle * Math.cos(theta) * Math.sin(phi));
+	}
+
+	// connect points
+	for (int iCircles = 0; iCircles < circles.length - 2; iCircles++){
+	    PointMatrix currentCircle = circles[iCircles];
+	    PointMatrix nextCircle = circles[iCircles + 1];
+	    for (int latitude = 0; latitude < currentCircle.lastCol - 1; latitude++){
+
+		this.addTriangle(currentCircle.m[0][latitude],
+				 currentCircle.m[1][latitude],
+				 currentCircle.m[2][latitude],
+				 currentCircle.m[0][latitude + 1],
+				 currentCircle.m[1][latitude + 1],
+				 currentCircle.m[2][latitude + 1],
+				 nextCircle.m[0][latitude + 1],
+				 nextCircle.m[1][latitude + 1],
+				 nextCircle.m[2][latitude + 1]);
+		this.addTriangle(currentCircle.m[0][latitude],
+				 currentCircle.m[1][latitude],
+				 currentCircle.m[2][latitude],
+				 nextCircle.m[0][latitude + 1],
+				 nextCircle.m[1][latitude + 1],
+				 nextCircle.m[2][latitude + 1],
+				 nextCircle.m[0][latitude],
+				 nextCircle.m[1][latitude],
+				 nextCircle.m[2][latitude]);
+	    }
+	}
+
+
+    }
+
+    //makes a torus	
+    public void generateTorusLinesOnly(double rTorus, double rCircle, double offx, double offy) {
+	final int nPhiSteps = 16; // number of times circle gets rotated (larger number --> smoother surface of torus)
+	final int nThetaSteps = 10; // number of points on the circle (larger number --> smoother curve)
+	PointMatrix[] circles = new PointMatrix[nPhiSteps]; // each circle is its own PointMatrix
+
+	// INITIALIZES AN ARRAY OF THE TORUS'S POINTS
+	for (int iCircle = 0; iCircle < nPhiSteps; iCircle++){
+	    circles[iCircle] = new PointMatrix();
+	    double phi = iCircle * 2*Math.PI/nPhiSteps;
+	    for (int iThetaStep = 0; iThetaStep < nThetaSteps; iThetaStep++ ){
+		double theta = iThetaStep * 2*Math.PI/nThetaSteps;
+		circles[iCircle].addPoint(rTorus * Math.cos(phi) + rCircle * Math.cos(theta) * Math.cos(phi) + offx,
+					      rCircle * Math.sin(theta) + offy,
+					      -rTorus * Math.sin(phi) - rCircle * Math.cos(theta) * Math.sin(phi));
+	     }
+	}
+
+	// MAKING CIRCLES
+	for (int iCircles = 0; iCircles < nPhiSteps; iCircles++){
+	    PointMatrix currentCircle = circles[iCircles];
+	    for (int iPoints = 0; iPoints < nThetaSteps - 1; iPoints++){
+		this.addEdge(currentCircle.m[0][iPoints],
+			     currentCircle.m[1][iPoints],
+			     currentCircle.m[2][iPoints],
+			     currentCircle.m[0][iPoints + 1],
+			     currentCircle.m[1][iPoints + 1],
+			     currentCircle.m[2][iPoints + 1]);
+	    }
+	    
+	    // makes the last point connect to the first point
+	    this.addEdge(m[0][lastCol-1],
+			 m[1][lastCol-1],
+			 m[2][lastCol-1],
+			 currentCircle.m[0][0],
+			 currentCircle.m[1][0],
+			 currentCircle.m[2][0]);
+	 }
+
+	// LATITUDE LINES
+	 for (int latitude = 0; latitude < nThetaSteps; latitude++){
+	    for (int longitude = 0; longitude < nPhiSteps - 1; longitude++){
+		this.addEdge(circles[longitude].m[0][latitude],
+			     circles[longitude].m[1][latitude],
+			     circles[longitude].m[2][latitude],
+			     circles[longitude + 1].m[0][latitude],
+			     circles[longitude + 1].m[1][latitude],
+			     circles[longitude + 1].m[2][latitude]);
+	    }
+	    
+	    this.addEdge(circles[nPhiSteps - 1].m[0][latitude],
+			 circles[nPhiSteps - 1].m[1][latitude],
+			 circles[nPhiSteps - 1].m[2][latitude],
+			 circles[0].m[0][latitude],
+			 circles[0].m[1][latitude],
+			 circles[0].m[2][latitude]);
+	   
+	}
+
+
+    }
+
+
+    public void renderSphereMesh(double r, double offx, double offy) {
+    }
+
+    //makes a sphere
+    public void generateSphere(double r, double offx, double offy) {
+	final int nPhiSteps = 20; // number of times semicircle gets rotated (== the number of lines of longitude) (larger number --> more longitude lines)
+	final int nThetaSteps = 20; // number of points on the semicircle (larger number --> smoother curve)
+	PointMatrix[] semicircles = new PointMatrix[nPhiSteps + 2]; // each semicircle is its own PointMatrix
+
+	// INITIALIZES AN ARRAY OF THE SPHERE'S POINTS
+	for (int iSemicircle = 0; iSemicircle < nPhiSteps; iSemicircle++){
+	    semicircles[iSemicircle] = new PointMatrix();
+	    for (int iThetaStep = 0; iThetaStep <= nThetaSteps; iThetaStep++ ){
+		semicircles[iSemicircle].addPoint(r * Math.sin(iThetaStep * Math.PI/nThetaSteps) * Math.cos(iSemicircle * 2*Math.PI/nPhiSteps) + offx,
+						  r * Math.cos(iThetaStep * Math.PI/nThetaSteps) + offy,
+						  -r * Math.sin(iThetaStep * Math.PI/nThetaSteps) * Math.sin(iSemicircle * 2*Math.PI/nPhiSteps));		
+	    }
+	} 
+	// makes another semicircle with the same coordinates as the 0th
+	semicircles[nPhiSteps] = new PointMatrix();
+	for (int iThetaStep = 0; iThetaStep <= nThetaSteps; iThetaStep++ ){
+	    semicircles[nPhiSteps].addPoint(r * Math.sin(iThetaStep * Math.PI/nThetaSteps) * Math.cos(0 * 2*Math.PI/nPhiSteps) + offx,
+					      r * Math.cos(iThetaStep * Math.PI/nThetaSteps) + offy,
+					      -r * Math.sin(iThetaStep * Math.PI/nThetaSteps) * Math.sin(0 * 2*Math.PI/nPhiSteps));		
+	}
+	
+	 // // WHAT THE HELL IS THIS?!?!?!?!?!?
+	 // semicircles[nPhiSteps] = new PointMatrix();
+	 // semicircles[nPhiSteps].addPoint(r * Math.sin((nThetaSteps - .01) * Math.PI/nThetaSteps) * Math.cos((nPhiSteps - .01) * 2*Math.PI/nPhiSteps) + offx,
+	 // 				r * Math.cos((nThetaSteps - .01) * Math.PI/nThetaSteps) + offy,
+	 // 				-r * Math.sin((nThetaSteps - .01) * Math.PI/nThetaSteps) * Math.sin((nPhiSteps - .01) * 2*Math.PI/nPhiSteps));
+	
+
+	// connect points
+	for (int iSemicircles = 0; iSemicircles < semicircles.length - 2; iSemicircles++){
+	    PointMatrix currentSemicircle = semicircles[iSemicircles];
+	    PointMatrix nextSemicircle = semicircles[iSemicircles + 1];
+	    for (int latitude = 0; latitude < currentSemicircle.lastCol - 1; latitude++){
+
+		this.addTriangle(currentSemicircle.m[0][latitude],
+				 currentSemicircle.m[1][latitude],
+				 currentSemicircle.m[2][latitude],
+				 currentSemicircle.m[0][latitude + 1],
+				 currentSemicircle.m[1][latitude + 1],
+				 currentSemicircle.m[2][latitude + 1],
+				 nextSemicircle.m[0][latitude + 1],
+				 nextSemicircle.m[1][latitude + 1],
+				 nextSemicircle.m[2][latitude + 1]);
+		this.addTriangle(currentSemicircle.m[0][latitude],
+				 currentSemicircle.m[1][latitude],
+				 currentSemicircle.m[2][latitude],
+				 nextSemicircle.m[0][latitude + 1],
+				 nextSemicircle.m[1][latitude + 1],
+				 nextSemicircle.m[2][latitude + 1],
+				 nextSemicircle.m[0][latitude],
+				 nextSemicircle.m[1][latitude],
+				 nextSemicircle.m[2][latitude]);
+
+	    }
+	}	
+	 
+	 
+
+    }		
+	
+    //makes a sphere	
+    public void generateSphereLinesOnly(double r, double offx, double offy) {
+	final int nPhiSteps = 20; // number of times semicircle gets rotated (== the number of lines of longitude) (larger number --> more longitude lines)
+	final int nThetaSteps = 20; // number of points on the semicircle (larger number --> smoother curve)
+	PointMatrix[] semicircles = new PointMatrix[nPhiSteps + 1]; // each semicircle is its own PointMatrix
+
+	// INITIALIZES AN ARRAY OF THE SPHERE'S POINTS
+	for (int iSemicircle = 0; iSemicircle < nPhiSteps; iSemicircle++){
+	    semicircles[iSemicircle] = new PointMatrix();
+	    for (int iThetaStep = 0; iThetaStep < nThetaSteps; iThetaStep++ ){		
+		semicircles[iSemicircle].addPoint(r * Math.sin(iThetaStep * Math.PI/nThetaSteps) * Math.cos(iSemicircle * 2*Math.PI/nPhiSteps) + offx,
+						  r * Math.cos(iThetaStep * Math.PI/nThetaSteps) + offy,
+						  -r * Math.sin(iThetaStep * Math.PI/nThetaSteps) * Math.sin(iSemicircle * 2*Math.PI/nPhiSteps));		
+	     }
+	 }
+	semicircles[nPhiSteps] = new PointMatrix();
+	semicircles[nPhiSteps].addPoint(r * Math.sin((nThetaSteps - .01) * Math.PI/nThetaSteps) * Math.cos((nPhiSteps - .01) * 2*Math.PI/nPhiSteps) + offx,
+					 r * Math.cos((nThetaSteps - .01) * Math.PI/nThetaSteps) + offy,
+					-r * Math.sin((nThetaSteps - .01) * Math.PI/nThetaSteps) * Math.sin((nPhiSteps - .01) * 2*Math.PI/nPhiSteps));
+
+
+	
+	 // LONGITUDE LINES
+	 for (int iSemicircles = 0; iSemicircles < nPhiSteps; iSemicircles++){
+	     PointMatrix currentSemicircle = semicircles[iSemicircles];
+	     for (int iPoints = 0; iPoints < nThetaSteps - 1; iPoints++){
+		 this.addEdge(currentSemicircle.m[0][iPoints],
+			      currentSemicircle.m[1][iPoints],
+			      currentSemicircle.m[2][iPoints],
+			      currentSemicircle.m[0][iPoints + 1],
+			      currentSemicircle.m[1][iPoints + 1],
+			      currentSemicircle.m[2][iPoints + 1]);
+	     }
+
+	     // makes the last point match the first point
+	     m[0][lastCol-1] = currentSemicircle.m[0][nThetaSteps - 1];
+	     m[1][lastCol-1] = currentSemicircle.m[1][nThetaSteps - 1];
+	     m[2][lastCol-1] = currentSemicircle.m[2][nThetaSteps - 1];
+	     m[3][lastCol-1] = currentSemicircle.m[3][nThetaSteps - 1];
+	 }
+	 for (int jSemicircles = 0; jSemicircles < nPhiSteps; jSemicircles++){
+	     this.addEdge(semicircles[jSemicircles].m[0][nThetaSteps - 1],
+			  semicircles[jSemicircles].m[1][nThetaSteps - 1],
+			  semicircles[jSemicircles].m[2][nThetaSteps - 1],
+			  semicircles[nPhiSteps].m[0][0],
+			  semicircles[nPhiSteps].m[1][0],
+			  semicircles[nPhiSteps].m[2][0]);
+	 }
+	 
+
+	
+	 
+	// LATITUDE LINES
+	 for (int latitude = 0; latitude < nThetaSteps; latitude++){
+	    for (int longitude = 0; longitude < nPhiSteps - 1; longitude++){
+		this.addEdge(semicircles[longitude].m[0][latitude],
+			     semicircles[longitude].m[1][latitude],
+			     semicircles[longitude].m[2][latitude],
+			     semicircles[longitude + 1].m[0][latitude],
+			     semicircles[longitude + 1].m[1][latitude],
+			     semicircles[longitude + 1].m[2][latitude]);
+	    }
+	    
+	    this.addEdge(semicircles[nPhiSteps - 1].m[0][latitude],
+			 semicircles[nPhiSteps - 1].m[1][latitude],
+			 semicircles[nPhiSteps - 1].m[2][latitude],
+			 semicircles[0].m[0][latitude],
+			 semicircles[0].m[1][latitude],
+			 semicircles[0].m[2][latitude]);
+	   
+	}
+	 
+
+    }
+
+    // does nothing
+    public void renderCircle(double r, double offx, double offy, double step) {
+	generateCircle(r, offx, offy, step);
+    }
+
+    /* generates the points on the circle and puts them into this PointMatrix in such a way that renderCircle works
+       Circle centered at (x, y) with radius r: 
+       X = (r)cos(T * 2PI) + offx 
+       Y = (r)sin(T * 2PI) + offy 
+     */
+    public void generateCircle(double r, double offx, double offy, double step) {
+	int startIndex = lastCol;
+	for(double t = 0; t < 1; t +=step){
+	    addEdge (r * Math.cos(t * 2 * Math.PI) + offx, r * Math.sin(t * 2 * Math.PI) + offx, 0,
+		     r * Math.cos((t + step) * 2 * Math.PI) + offx, r * Math.sin((t + step) * 2 * Math.PI) + offx, 0
+		    );
+	}
+	// makes the last point match the first point
+	m[0][lastCol-1] = m[0][startIndex];
+	m[1][lastCol-1] = m[1][startIndex];
+	m[2][lastCol-1] = m[2][startIndex];
+	m[3][lastCol-1] = m[3][startIndex];
+    }
+
+
+    /*======== public void addPoint() ==========
+      Inputs:  int x
+      int y
+      int z 
+      Returns: 
+      adds (x, y, z) to the calling object
+      if lastcol is the maxmium value for this current matrix, 
+      call grow
+      ====================*/
+    public void addPoint(int x, int y, int z) {
+	if (lastCol == m[0].length)
+	    grow();
+	m[0][lastCol] = x;
+	m[1][lastCol] = y;
+	m[2][lastCol] = z;
+	m[3][lastCol] = 1;
+	lastCol++;
+    }
+    public void addPoint(double x, double y, double z) {
+	addPoint((int)Math.floor(x + .5), (int)Math.floor(y + .5), (int)Math.floor(z + .5));
+    }
+
+    /*======== public void addEdge() ==========
+      Inputs:
+      x, y, and z coordinates of the two points that define the line segment
+      Returns: 
+      adds the line connecting (x0, y0, z0) and (x1, y1, z1)
+      to the calling object
+      should use addPoint
+      ====================*/
+    public void addEdge(int x0, int y0, int z0, int x1, int y1, int z1) {
+	addPoint(x0, y0, z0);
+	addPoint(x1, y1, z1);
+    }
+
+    public void addEdge(double x0, double y0, double z0, double x1, double y1, double z1) {
+	addPoint(x0, y0, z0);
+	addPoint(x1, y1, z1);
+    }
+
+    public void addTriangle(double x0, double y0, double z0, double x1, double y1, double z1, double x2, double y2, double z2) {
+	addPoint(x0, y0, z0);
+	addPoint(x1, y1, z1);
+	addPoint(x2, y2, z2);
+    }
+
+    // goes through this and culls backfaces
+    public PointMatrix backfaceCulling(){
+	PointMatrix culled = new PointMatrix();
+
+	PointMatrix viewVector = new PointMatrix(1); // probably should get factored out somewhere; did in fact factor out, but not fixing this because life is short
+	// makes view vector point out from the screen towards the user
+	viewVector.m[0][0] = 0;
+	viewVector.m[1][0] = 0;
+	viewVector.m[2][0] = -1;
+
+	// once through the loop is dealing with one triangle
+	for(int index = 0; index < lastCol; index += 3){
+	    //calculate vector from index to index+1
+	    PointMatrix bMinusA = new PointMatrix(1);
+	    bMinusA.m[0][0] = this.m[0][index+1] - this.m[0][index];
+	    bMinusA.m[1][0] = this.m[1][index+1] - this.m[1][index];
+	    bMinusA.m[2][0] = this.m[2][index+1] - this.m[2][index];
+	    //calculate vector from index to index+2
+	    PointMatrix dMinusA = new PointMatrix(1);
+	    dMinusA.m[0][0] = this.m[0][index+2] - this.m[0][index];
+	    dMinusA.m[1][0] = this.m[1][index+2] - this.m[1][index];
+	    dMinusA.m[2][0] = this.m[2][index+2] - this.m[2][index];
+
+	    PointMatrix normal = normalVector(bMinusA, dMinusA);
+
+	    if(dotProduct(normal, viewVector) > 0){
+		culled.addTriangle(this.m[0][index], this.m[1][index], this.m[2][index],
+				   this.m[0][index+1], this.m[1][index+1], this.m[2][index+1],
+				   this.m[0][index+2], this.m[1][index+2], this.m[2][index+2]);
+	    }
+	}
+	return culled;
+    }
+
+    private double dotProduct(PointMatrix a, PointMatrix b){
+	return a.m[0][0]*b.m[0][0] + a.m[1][0]*b.m[1][0] + a.m[2][0]*b.m[2][0];
+    }
+
+    private PointMatrix normalVector(PointMatrix a, PointMatrix b){
+
+	// cross product to get normal vector
+	PointMatrix normal = new PointMatrix(1);
+	normal.m[0][0] = a.m[1][0]*b.m[2][0] - a.m[2][0]*b.m[1][0];
+	normal.m[1][0] = a.m[2][0]*b.m[0][0] - a.m[0][0]*b.m[2][0];
+	normal.m[2][0] = a.m[0][0]*b.m[1][0] - a.m[1][0]*b.m[0][0];
+
+	// normalize the magnitude of normal vector
+	double normalMagnitude = Math.sqrt(normal.m[0][0]*normal.m[0][0] + 
+					   normal.m[1][0]*normal.m[1][0] + 
+					   normal.m[2][0]*normal.m[2][0]);
+	normal.m[0][0] /= normalMagnitude;
+	normal.m[1][0] /= normalMagnitude;
+	normal.m[2][0] /= normalMagnitude;
+
+	return normal;
+    }
+
+    //appends appendee to this
+    public void append(PointMatrix appendee){
+	for(int col = 0; col < appendee.lastCol; col++)
+	    this.addPoint(appendee.m[0][col],
+			  appendee.m[1][col],
+			  appendee.m[2][col]);
+    }
+
+
+    /*======== accessors ==========
+      ====================*/
+    public int getLastCol() {
+	return lastCol;
+    }
+    public int  getX(int c) {
+	return (int)m[0][c];
+    }
+    public int  getY(int c) {
+	return (int)m[1][c];
+    }
+    public int  getZ(int c) {
+	return (int)m[2][c];
+    }
+    public void clear() {
+	super.clear();
+	lastCol = 0;
+    }
+   
+    public PointMatrix copy() {
+	
+	PointMatrix n = new PointMatrix( m[0].length );
+	for (int r=0; r<m.length; r++)
+	    for (int c=0; c<m[r].length; c++)
+		n.m[r][c] = m[r][c];
+	n.lastCol = lastCol;
+	return n;
+    }
+
+}

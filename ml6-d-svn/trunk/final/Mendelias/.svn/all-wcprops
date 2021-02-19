@@ -1,0 +1,221 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/758/trunk/final/Mendelias
+END
+shapes.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/730/trunk/final/Mendelias/shapes.h
+END
+symtab.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/656/trunk/final/Mendelias/symtab.c
+END
+parser.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/656/trunk/final/Mendelias/parser.h
+END
+symtab.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/656/trunk/final/Mendelias/symtab.h
+END
+display.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/732/trunk/final/Mendelias/display.c
+END
+matrix_skeleton.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/656/trunk/final/Mendelias/matrix_skeleton.c
+END
+display.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/732/trunk/final/Mendelias/display.h
+END
+light_shade.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/757/trunk/final/Mendelias/light_shade.c
+END
+splines.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/656/trunk/final/Mendelias/splines.c
+END
+y.tab.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/730/trunk/final/Mendelias/y.tab.c
+END
+light_shade.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/757/trunk/final/Mendelias/light_shade.h
+END
+mdl.tab.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/730/trunk/final/Mendelias/mdl.tab.c
+END
+splines.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/656/trunk/final/Mendelias/splines.h
+END
+y.tab.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/730/trunk/final/Mendelias/y.tab.h
+END
+MDL.spec
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/656/trunk/final/Mendelias/MDL.spec
+END
+mdl.l
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/656/trunk/final/Mendelias/mdl.l
+END
+lex.yy.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/730/trunk/final/Mendelias/lex.yy.c
+END
+matrix_stack.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/656/trunk/final/Mendelias/matrix_stack.c
+END
+my_main.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/732/trunk/final/Mendelias/my_main.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/730/trunk/final/Mendelias/Makefile
+END
+draw.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/757/trunk/final/Mendelias/draw.c
+END
+matrix_stack.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/656/trunk/final/Mendelias/matrix_stack.h
+END
+draw_skeleton.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/656/trunk/final/Mendelias/draw_skeleton.c
+END
+mdl.y
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/656/trunk/final/Mendelias/mdl.y
+END
+cmd_processor.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/757/trunk/final/Mendelias/cmd_processor.c
+END
+draw.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/757/trunk/final/Mendelias/draw.h
+END
+ml6.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/732/trunk/final/Mendelias/ml6.h
+END
+matrix.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/656/trunk/final/Mendelias/matrix.c
+END
+print_pcode.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/656/trunk/final/Mendelias/print_pcode.c
+END
+matrix.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/656/trunk/final/Mendelias/matrix.h
+END
+parametrics.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/656/trunk/final/Mendelias/parametrics.c
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/757/trunk/final/Mendelias/README
+END
+parametrics.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/656/trunk/final/Mendelias/parametrics.h
+END
+shapes.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/730/trunk/final/Mendelias/shapes.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/656/trunk/final/Mendelias/main.c
+END
+PROJECT
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/656/trunk/final/Mendelias/PROJECT
+END

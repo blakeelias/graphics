@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/567/trunk/shapes/costin
+END
+matrix_skeleton.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/563/trunk/shapes/costin/matrix_skeleton.c
+END
+matrix.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/563/trunk/shapes/costin/matrix.h
+END
+display.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/563/trunk/shapes/costin/display.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/563/trunk/shapes/costin/Makefile
+END
+draw.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/567/trunk/shapes/costin/draw.c
+END
+draw_skeleton.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/563/trunk/shapes/costin/draw_skeleton.c
+END
+draw.h
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/567/trunk/shapes/costin/draw.h
+END
+main
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/567/trunk/shapes/costin/main
+END
+ml6.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/563/trunk/shapes/costin/ml6.h
+END
+script
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/563/trunk/shapes/costin/script
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/567/trunk/shapes/costin/main.c
+END
+matrix.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/563/trunk/shapes/costin/matrix.c
+END
+display.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/567/trunk/shapes/costin/display.c
+END

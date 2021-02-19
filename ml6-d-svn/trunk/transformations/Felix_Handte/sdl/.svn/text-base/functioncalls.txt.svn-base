@@ -1,0 +1,8 @@
+main
+	initDArea
+		matrix_new
+		mode_change
+	initCOntrols
+	doGtk
+	doSDL
+		click

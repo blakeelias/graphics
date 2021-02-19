@@ -1,0 +1,8 @@
+frames 100
+basename globe
+
+push
+rotate x 90 rotate_knob
+sphere 0 0 0 100
+
+vary rotate_knob 0 99 0 1

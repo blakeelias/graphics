@@ -1,0 +1,1 @@
+I am a real bum, after I got into the AFA I have been going on reddit all day. I will probably resubmit this project sometime before spring break. I will email you for your consent. 

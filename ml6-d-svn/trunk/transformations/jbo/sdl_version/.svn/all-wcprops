@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/204/trunk/transformations/jbo/sdl_version
+END
+spinny
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/204/trunk/transformations/jbo/sdl_version/spinny
+END
+ui.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/204/trunk/transformations/jbo/sdl_version/ui.h
+END
+draw.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/204/trunk/transformations/jbo/sdl_version/draw.h
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/204/trunk/transformations/jbo/sdl_version/main.c
+END
+matrix.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/204/trunk/transformations/jbo/sdl_version/matrix.c
+END
+matrix.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/204/trunk/transformations/jbo/sdl_version/matrix.h
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/145/trunk/transformations/jbo/sdl_version/README
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/204/trunk/transformations/jbo/sdl_version/makefile
+END
+ui.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/204/trunk/transformations/jbo/sdl_version/ui.c
+END
+draw.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/204/trunk/transformations/jbo/sdl_version/draw.c
+END

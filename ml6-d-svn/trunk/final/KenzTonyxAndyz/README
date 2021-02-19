@@ -1,0 +1,21 @@
+Note: This program requires SDL to compile
+
+
+
+This program is a modified mdl implementation.
+Most notable is the additional command "navigate",
+which opens up a navigateable 3D display of the
+mdl animation. Controls are:
+
+W: Move Forward
+S: Move Backward
+A: Move Left
+D: Move Right
+
+Up Arrow:    Look Up
+Down Arrow:  Look Down
+Left Arrow:  Turn Left
+Right Arrow: Turn Right
+
+R: Reset position
+Q: Quit

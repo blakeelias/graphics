@@ -1,0 +1,1 @@
+We were able to get vary to work, but there is a problem with the images. It doesn't mult. right somewhere. We also skipped the simple setting of knobs in the file(user input for knobs) and skipped to vary/animate. Theres also a bug where the knobs always seem to think there are 100 frames. Found it too late and cannot fix it.

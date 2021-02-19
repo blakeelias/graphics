@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/48/trunk/line/Manfred
+END
+test.c
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/48/trunk/line/Manfred/test.c
+END
+display.o
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/48/trunk/line/Manfred/display.o
+END
+draw.h
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/48/trunk/line/Manfred/draw.h
+END
+ml6.h
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/48/trunk/line/Manfred/ml6.h
+END
+display.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/48/trunk/line/Manfred/display.c
+END
+matrix_skeleton.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/48/trunk/line/Manfred/matrix_skeleton.c
+END
+matrix.h
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/48/trunk/line/Manfred/matrix.h
+END
+draw.o
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/48/trunk/line/Manfred/draw.o
+END
+linealgo
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/19/trunk/line/Manfred/linealgo
+END
+display.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/48/trunk/line/Manfred/display.h
+END
+test.o
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/48/trunk/line/Manfred/test.o
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/48/trunk/line/Manfred/Makefile
+END
+interesting_name_here
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/48/trunk/line/Manfred/interesting_name_here
+END
+draw.c
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/48/trunk/line/Manfred/draw.c
+END

@@ -1,0 +1,21 @@
+#!/bin/bash
+
+cd ver
+
+read buildnum < build.num
+read versionnum < version.num
+read segfaultnum < segfaults.num
+read failedmakes < failedmakes.num
+
+cd ../hdr
+
+echo "#ifndef _VER_H" > ver.h
+echo "#define _VER_H" >> ver.h
+echo "#define PROGRAM_VER \"$versionnum\"" >> ver.h
+echo "#define PROGRAM_BUILD \"$buildnum\"" >> ver.h
+echo "#define PROGRAM_VER_BUILD \"$versionnum.$buildnum\"" >> ver.h
+echo "#define SEGFAULT_COUNT \"$segfaultnum\"" >> ver.h
+echo "#define FAILEDMAKES_COUNT \"$failedmakes\"" >> ver.h
+echo "#endif" >> ver.h
+
+cd ..	

@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/143/trunk/DWsource/parametrics
+END
+draw.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/143/trunk/DWsource/parametrics/draw.h
+END
+main
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/143/trunk/DWsource/parametrics/main
+END
+ml6.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/143/trunk/DWsource/parametrics/ml6.h
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/143/trunk/DWsource/parametrics/main.c
+END
+matrix.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/143/trunk/DWsource/parametrics/matrix.c
+END
+display.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/143/trunk/DWsource/parametrics/display.c
+END
+matrix.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/143/trunk/DWsource/parametrics/matrix.h
+END
+parametrics.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/143/trunk/DWsource/parametrics/parametrics.c
+END
+display.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/143/trunk/DWsource/parametrics/display.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/143/trunk/DWsource/parametrics/Makefile
+END
+draw.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/143/trunk/DWsource/parametrics/draw.c
+END
+parametrics.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/143/trunk/DWsource/parametrics/parametrics.h
+END

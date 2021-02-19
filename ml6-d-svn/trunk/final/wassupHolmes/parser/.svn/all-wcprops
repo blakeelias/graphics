@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/678/trunk/final/wassupHolmes/parser
+END
+MdlParserTokenManager.class
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/678/trunk/final/wassupHolmes/parser/MdlParserTokenManager.class
+END
+MdlParserConstants.class
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/678/trunk/final/wassupHolmes/parser/MdlParserConstants.class
+END
+MdlParser.class
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/678/trunk/final/wassupHolmes/parser/MdlParser.class
+END
+ParseException.class
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/678/trunk/final/wassupHolmes/parser/ParseException.class
+END
+parser.jj
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/678/trunk/final/wassupHolmes/parser/parser.jj
+END
+Token.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/678/trunk/final/wassupHolmes/parser/Token.java
+END
+TokenMgrError.class
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/678/trunk/final/wassupHolmes/parser/TokenMgrError.class
+END
+MdlParserTokenManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/678/trunk/final/wassupHolmes/parser/MdlParserTokenManager.java
+END
+MdlParserConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/678/trunk/final/wassupHolmes/parser/MdlParserConstants.java
+END
+SimpleCharStream.class
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/678/trunk/final/wassupHolmes/parser/SimpleCharStream.class
+END
+ParseException.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/678/trunk/final/wassupHolmes/parser/ParseException.java
+END
+MdlParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/678/trunk/final/wassupHolmes/parser/MdlParser.java
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/678/trunk/final/wassupHolmes/parser/Makefile
+END
+TokenMgrError.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/678/trunk/final/wassupHolmes/parser/TokenMgrError.java
+END
+SimpleCharStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/678/trunk/final/wassupHolmes/parser/SimpleCharStream.java
+END
+Token.class
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/678/trunk/final/wassupHolmes/parser/Token.class
+END

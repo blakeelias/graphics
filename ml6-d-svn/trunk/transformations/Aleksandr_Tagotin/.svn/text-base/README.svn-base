@@ -1,0 +1,10 @@
+Aleksandr Tagotin
+
+Java code, should autoparse script files
+
+I was at one point led to believe that I had fully completed the project (until reality set in).
+The code appears to work up to the transformation part (that sounded worse that I thought it would), extensive debugging didnt seem to help. Namely, while plain lines graph; application of the transformation matrix destroys my work by the form of a (0,0)'ed matrix. Replacing my code with a peer's for Matrixmult doesn't fully fix this problem (all dimensions but one were (0,0)'ed). 
+It appears to occur regardless of which transformation is performed (for the most part).
+
+
+(speaking of borrowed code, I had to look on to see the proper interaction of the input classes)

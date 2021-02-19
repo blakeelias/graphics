@@ -1,0 +1,4 @@
+Andy, Steven, and Vishal wrote a program that simulates the planets within the asteroid belt.
+They rotate around the sun at approximately the correct ratio.
+To use, remove all files with ".o" at the end, and make. Then enter "./mdl planets.mdl" and let it load.
+It may take a while, and then do "animate *planets". When open, slow and speed up to preference.

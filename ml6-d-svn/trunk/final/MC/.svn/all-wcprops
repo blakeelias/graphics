@@ -1,0 +1,335 @@
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/!svn/ver/755/trunk/final/MC
+END
+my_main.o
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/755/trunk/final/MC/my_main.o
+END
+print_pcode.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/746/trunk/final/MC/print_pcode.c
+END
+TORUSTEST.mdl
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/755/trunk/final/MC/TORUSTEST.mdl
+END
+parametrics.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/746/trunk/final/MC/parametrics.c
+END
+THETEST.mdl
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/755/trunk/final/MC/THETEST.mdl
+END
+symtab.o
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/755/trunk/final/MC/symtab.o
+END
+cmd_processor.o
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/755/trunk/final/MC/cmd_processor.o
+END
+parametrics.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/746/trunk/final/MC/parametrics.h
+END
+globe.mdl
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/746/trunk/final/MC/globe.mdl
+END
+knobTest.mdl
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/746/trunk/final/MC/knobTest.mdl
+END
+MDL.spec
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/746/trunk/final/MC/MDL.spec
+END
+PROJECT
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/746/trunk/final/MC/PROJECT
+END
+parametrics.o
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/755/trunk/final/MC/parametrics.o
+END
+lex.yy.c
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/746/trunk/final/MC/lex.yy.c
+END
+matrix_stack.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/746/trunk/final/MC/matrix_stack.c
+END
+mdl
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/755/trunk/final/MC/mdl
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/746/trunk/final/MC/Makefile
+END
+draw.c
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/755/trunk/final/MC/draw.c
+END
+test
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/746/trunk/final/MC/test
+END
+matrix_stack.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/746/trunk/final/MC/matrix_stack.h
+END
+draw.h
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/748/trunk/final/MC/draw.h
+END
+matrix.c
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/746/trunk/final/MC/matrix.c
+END
+display.c
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/746/trunk/final/MC/display.c
+END
+matrix_stack.o
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/755/trunk/final/MC/matrix_stack.o
+END
+simple_test
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/746/trunk/final/MC/simple_test
+END
+matrix_skeleton.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/746/trunk/final/MC/matrix_skeleton.c
+END
+draw.o
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/755/trunk/final/MC/draw.o
+END
+matrix.h
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/746/trunk/final/MC/matrix.h
+END
+display.h
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/746/trunk/final/MC/display.h
+END
+varyTest.mdl
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/746/trunk/final/MC/varyTest.mdl
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/755/trunk/final/MC/README
+END
+y.tab.c
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/746/trunk/final/MC/y.tab.c
+END
+splines.c
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/746/trunk/final/MC/splines.c
+END
+matrix.o
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/755/trunk/final/MC/matrix.o
+END
+SPHERETEST.mdl
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/755/trunk/final/MC/SPHERETEST.mdl
+END
+display.o
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/755/trunk/final/MC/display.o
+END
+mdl.tab.c
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/746/trunk/final/MC/mdl.tab.c
+END
+y.tab.h
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/746/trunk/final/MC/y.tab.h
+END
+BOXTEST.mdl
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/755/trunk/final/MC/BOXTEST.mdl
+END
+splines.h
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/746/trunk/final/MC/splines.h
+END
+simpleTest.mdl
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/746/trunk/final/MC/simpleTest.mdl
+END
+script
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/746/trunk/final/MC/script
+END
+robotAnim.mdl
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/746/trunk/final/MC/robotAnim.mdl
+END
+matrix_skeleton.o
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/755/trunk/final/MC/matrix_skeleton.o
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/746/trunk/final/MC/main.c
+END
+mdl.l
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/746/trunk/final/MC/mdl.l
+END
+splines.o
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/755/trunk/final/MC/splines.o
+END
+my_main.c
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/746/trunk/final/MC/my_main.c
+END
+symtab.c
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/746/trunk/final/MC/symtab.c
+END
+draw_skeleton.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/746/trunk/final/MC/draw_skeleton.c
+END
+parser.h
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/746/trunk/final/MC/parser.h
+END
+cmd_processor.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/748/trunk/final/MC/cmd_processor.c
+END
+mdl.y
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/746/trunk/final/MC/mdl.y
+END
+ml6.h
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/746/trunk/final/MC/ml6.h
+END
+symtab.h
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/746/trunk/final/MC/symtab.h
+END

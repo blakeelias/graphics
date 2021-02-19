@@ -1,0 +1,9 @@
+sphere 200 200 0 75
+push
+rotate x 30
+rotate y 30
+move 200 200 0
+sphere 0 0 0 25
+pop
+sphere 0 0 0 100
+save simpleTest.png

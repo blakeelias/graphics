@@ -1,0 +1,61 @@
+#!/bin/bash
+
+PROJTITLE=mdl
+MAKEFILE=Makefile
+NULL=/dev/null
+
+PROJNAME=${PROJTITLE}
+CFILES="symtab.c matrix.c my_main.c"
+
+
+
+echo "Building for Linux"
+
+
+
+for a in ${CFILES}
+do
+ OFILES="${OFILES} ${a//.c/.o}"
+done
+
+OFILES=`echo ${OFILES}`
+
+
+
+echo "Writing Makefile..."
+
+cat > ${MAKEFILE} <<_EOF
+CFLAGS     := -Wall -Wno-unused -O3
+LFLAGS     := -lm
+
+CC         := gcc
+
+.PHONY: all clean
+
+all: ${PROJNAME}
+
+clean:
+	rm -f ${PROJNAME} ${OFILES} lex.yy.c y.tab.c y.tab.h *.bmp
+
+${PROJNAME}: lex.yy.c y.tab.c y.tab.h ${OFILES}
+	@echo "LD \$(CFLAGS) -o ${PROJNAME}"
+	@\$(CC) \$(CFLAGS) -o \$@ lex.yy.c y.tab.c ${OFILES} \$(LFLAGS)
+
+lex.yy.c lex.yy.h y.tab.c y.tab.h: mdl.l mdl.y symtab.h parser.h
+	flex --header-file=lex.yy.h -I mdl.l
+	bison -d -y mdl.y
+
+_EOF
+
+for a in ${CFILES}
+do
+ OFILE=${a//.c/.o}
+ gcc -MM -MG -MQ ${OFILE} ${a} >> ${MAKEFILE}
+ cat >> ${MAKEFILE} <<_EOF
+	@echo "CC \$(CFLAGS) -o ${OFILE}"
+	@\$(CC) \$(CFLAGS) -c ${a} -o ${OFILE}
+
+_EOF
+done
+
+

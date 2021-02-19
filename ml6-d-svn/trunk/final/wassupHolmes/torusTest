@@ -1,0 +1,4 @@
+rotate x 30
+move 100 100 10
+torus 50 50 0 90 30
+save torusTest.png

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/187/trunk/line/jbo/linesdl
+END
+ui.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/55/trunk/line/jbo/linesdl/ui.c
+END
+draw.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/187/trunk/line/jbo/linesdl/draw.c
+END
+ui.h
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/55/trunk/line/jbo/linesdl/ui.h
+END
+draw.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/187/trunk/line/jbo/linesdl/draw.h
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/55/trunk/line/jbo/linesdl/main.c
+END
+lines
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/55/trunk/line/jbo/linesdl/lines
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/55/trunk/line/jbo/linesdl/README
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/55/trunk/line/jbo/linesdl/makefile
+END

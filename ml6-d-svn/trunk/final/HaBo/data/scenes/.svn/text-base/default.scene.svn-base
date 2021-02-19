@@ -1,0 +1,12 @@
+transform
+	include plane
+	transform
+		object plane plane-body
+		transform
+			object basic plane-elevators
+		transform
+			object basic plane-rudder-l
+		transform
+			object basic plane-rudder-r
+		transform
+			camera

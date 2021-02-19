@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/204/trunk/transformations/jbo/sdl_version/stuff
+END
+old_line_algorithm
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/204/trunk/transformations/jbo/sdl_version/stuff/old_line_algorithm
+END
+gtk_stuff.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/204/trunk/transformations/jbo/sdl_version/stuff/gtk_stuff.c
+END
+gtk_stuff.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/204/trunk/transformations/jbo/sdl_version/stuff/gtk_stuff.h
+END
+gtk_test.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/204/trunk/transformations/jbo/sdl_version/stuff/gtk_test.c
+END

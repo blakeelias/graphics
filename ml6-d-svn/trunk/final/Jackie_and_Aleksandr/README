@@ -1,0 +1,3 @@
+Instead of tackling polygons and other such difficult topics, we decided to go back and make firm our grasp of animations and mdl. Enclosed is an animation with far less bugs than the previous version. The only remaining bug is that random frames not displaying correctly.
+
+We recently discovered something and just had to document this rare spikeless cloaked zergling in motion. To see it, just make and then use the command java mdl < finespecimen. Then animate with animate zergling*.

@@ -1,0 +1,82 @@
+/*********
+ * Files *
+ *********/
+
+
+
+Object
+	Points, etc. in local coordinate system.
+	Absolute position information
+
+Transform into absolute space
+
+Camera
+	Absolute position information
+
+
+
+
+Physics Engine
+	- Flight Model
+	- Collision Detection
+
+Networking
+
+Objects
+	- Attributes:
+		- Flight Characteristics
+		- Graphics
+	- Examples:
+		- Aircraft
+		- Missiles
+		- Explosions
+		
+OBJECT
+	- Geometry
+	- Graphics
+	FLYING THINGS
+		- Flight Characteristics
+		AIRPLANES
+		MISSILES
+		BULLETS
+	EFFECTS
+		- Time-to-live
+		SMOKE
+		EXPLOSIONS
+	GROUND
+	CLOUDS
+	SKYBOX
+
+/**********
+ * Making *
+ **********/
+
+Available Targets:
+	make
+	make clean
+	make force
+		(clean and make)
+	make ref/profile
+		if the program has been run with profiling, generates the profile
+	make ref/disassembled
+
+Options:
+	BOTHOPTS='-pg'
+		compile with profiling
+
+/**********
+ * Keymap *
+ **********/
+
+See /usr/include/SDL/SDL_keysym.h for SDL's defines.
+
+/******************
+ * Debug Printing *
+ ******************/
+
+Add key to debuggroups enum in globals.h.
+Add default value to globals.c.
+Add debug print statement as:
+d_debug_n(D_KEY, "string");
+or
+d_debug_w(D_KEY, "with args: %d", args, ...);

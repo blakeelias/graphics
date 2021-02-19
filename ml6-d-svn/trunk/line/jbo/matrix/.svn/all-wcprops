@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/45/trunk/line/jbo/matrix
+END
+matrix.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/45/trunk/line/jbo/matrix/matrix.h
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/45/trunk/line/jbo/matrix/makefile
+END
+matrix_test.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/45/trunk/line/jbo/matrix/matrix_test.c
+END
+matrix.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/45/trunk/line/jbo/matrix/matrix.c
+END

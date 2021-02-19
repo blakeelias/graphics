@@ -1,0 +1,7 @@
+push
+move 30 30 0
+rotate y 30
+rotate x 30
+box 0 0 0 100 200 100
+pop
+save boxTest.png

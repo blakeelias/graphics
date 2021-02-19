@@ -1,0 +1,7 @@
+A spinny cube. Use with supplied script.
+
+The executable was built with libsdl1.2-dev in Ubuntu 10.10 on a 32-bit processor.
+
+It no longer relies on GTK, so it might actually have a chance of compiling and running anywhere. (SDL prides itself on its cross-platformishness).
+
+More interactive version coming soon. For now, try right-clicking on the cube window.

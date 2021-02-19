@@ -1,0 +1,221 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/764/trunk/mdl/Jackie_and_Aleksandr/parseTables
+END
+opSetknobs.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/464/trunk/mdl/Jackie_and_Aleksandr/parseTables/opSetknobs.java
+END
+opBox.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/762/trunk/mdl/Jackie_and_Aleksandr/parseTables/opBox.java
+END
+opKnob.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/760/trunk/mdl/Jackie_and_Aleksandr/parseTables/opKnob.java
+END
+opGeneraterayfiles.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/464/trunk/mdl/Jackie_and_Aleksandr/parseTables/opGeneraterayfiles.java
+END
+opFrame.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/761/trunk/mdl/Jackie_and_Aleksandr/parseTables/opFrame.java
+END
+opSaveknobs.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/464/trunk/mdl/Jackie_and_Aleksandr/parseTables/opSaveknobs.java
+END
+opSave.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/596/trunk/mdl/Jackie_and_Aleksandr/parseTables/opSave.java
+END
+opPop.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/596/trunk/mdl/Jackie_and_Aleksandr/parseTables/opPop.java
+END
+opRotate.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/762/trunk/mdl/Jackie_and_Aleksandr/parseTables/opRotate.java
+END
+SymTab.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/464/trunk/mdl/Jackie_and_Aleksandr/parseTables/SymTab.java
+END
+opMatrix.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/485/trunk/mdl/Jackie_and_Aleksandr/parseTables/opMatrix.java
+END
+opMove.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/763/trunk/mdl/Jackie_and_Aleksandr/parseTables/opMove.java
+END
+opBasename.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/596/trunk/mdl/Jackie_and_Aleksandr/parseTables/opBasename.java
+END
+opConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/464/trunk/mdl/Jackie_and_Aleksandr/parseTables/opConstants.java
+END
+opTorus.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/764/trunk/mdl/Jackie_and_Aleksandr/parseTables/opTorus.java
+END
+opShading.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/464/trunk/mdl/Jackie_and_Aleksandr/parseTables/opShading.java
+END
+opFrames.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/756/trunk/mdl/Jackie_and_Aleksandr/parseTables/opFrames.java
+END
+opPointMatrix.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/593/trunk/mdl/Jackie_and_Aleksandr/parseTables/opPointMatrix.java
+END
+opAmbient.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/464/trunk/mdl/Jackie_and_Aleksandr/parseTables/opAmbient.java
+END
+opVary.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/603/trunk/mdl/Jackie_and_Aleksandr/parseTables/opVary.java
+END
+opFocal.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/464/trunk/mdl/Jackie_and_Aleksandr/parseTables/opFocal.java
+END
+opSphere.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/764/trunk/mdl/Jackie_and_Aleksandr/parseTables/opSphere.java
+END
+opScale.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/762/trunk/mdl/Jackie_and_Aleksandr/parseTables/opScale.java
+END
+opTrans.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/464/trunk/mdl/Jackie_and_Aleksandr/parseTables/opTrans.java
+END
+opCamera.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/464/trunk/mdl/Jackie_and_Aleksandr/parseTables/opCamera.java
+END
+opSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/464/trunk/mdl/Jackie_and_Aleksandr/parseTables/opSet.java
+END
+opMesh.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/464/trunk/mdl/Jackie_and_Aleksandr/parseTables/opMesh.java
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/464/trunk/mdl/Jackie_and_Aleksandr/parseTables/Makefile
+END
+opShape.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/481/trunk/mdl/Jackie_and_Aleksandr/parseTables/opShape.java
+END
+opDisplay.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/464/trunk/mdl/Jackie_and_Aleksandr/parseTables/opDisplay.java
+END
+opLight.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/464/trunk/mdl/Jackie_and_Aleksandr/parseTables/opLight.java
+END
+opCode.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/759/trunk/mdl/Jackie_and_Aleksandr/parseTables/opCode.java
+END
+opPush.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/596/trunk/mdl/Jackie_and_Aleksandr/parseTables/opPush.java
+END
+opTween.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/464/trunk/mdl/Jackie_and_Aleksandr/parseTables/opTween.java
+END
+opSavecs.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/464/trunk/mdl/Jackie_and_Aleksandr/parseTables/opSavecs.java
+END
+opLine.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/596/trunk/mdl/Jackie_and_Aleksandr/parseTables/opLine.java
+END

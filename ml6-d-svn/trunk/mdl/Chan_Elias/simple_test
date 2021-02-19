@@ -1,0 +1,5 @@
+sphere 200 200 0 50
+push
+move 10 10 0
+sphere 200 200 0 50
+display

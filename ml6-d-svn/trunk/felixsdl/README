@@ -1,0 +1,92 @@
+/**********
+ * README *
+ **********/
+
+By Felix Handte
+felixhandte@gmail.com
+
+/***********
+ * Utility *
+ ***********/
+
+Instead of writing out a file, forking, and exec'ing "display" on the file to display your creation, you can use this library to do it in-process and more efficiently. You can also animate things easily!
+
+/*************
+ * Requires: *
+ *************/
+
+	- GNOME (i.e. Ubuntu only)
+	- libsdl1.2-dev
+	- libgtk2.0-dev
+
+/***************
+ * Using This: *
+ ***************/
+
+This interface provides the following functions:
+	- initwindow()
+	- clearScreen()
+	- drawPixel()
+	- updateScreen()
+	- updateScreenRect()
+	- doGtk()
+They are used as follows:
+	- void initWindow(int *argc, char ***argv, int width, int height, char *window_title);
+		Should be called once as early as convenient in main(), with the first two arguments exactly as follows and the others as described:
+			initwindow(&argc, &argv, desired_screen_width, desired_screen_height, desired_window_title);
+	- void clearScreen(void);
+		Turns all pixels to white.
+	- void drawPixel(unsigned char R, unsigned char G, unsigned char B, int x, int y);
+		R, G, and B are each values from 0 to 255.
+		x and y are from 0 to WIDTH - 1 and 0 to HEIGHT - 1
+	- void updateScreen(void);
+		Calls to clearScreen or drawPixel do not actually change what is displayed until updateScreen is called.
+		updateScreen refreshes the whole array, which is not very fast. Look into SDL_UpdateRect() if you need finer control.
+	- void updateScreenRect(int x, int y, int w, int h);
+		Same as updateScreen(), but only updates the part of the screen requested. More efficient.
+	- void doGtk(void);
+		Required periodically to process X Windowing events (i.e., redisplay the window when you uncover it, respond to button clicks, etc.)
+		Should be called no more than ~100ms apart.
+
+/***********
+ * Making: *
+ ***********/
+
+Add this to your linking step:
+
+`pkg-config --libs   sdl` `pkg-config --libs   gtk+-2.0` ui.o
+
+And remember to add ui.o to your final executable's dependencies. E.g.,
+
+final : other.o files.o ui.o
+	gcc `pkg-config --libs   sdl` `pkg-config --libs   gtk+-2.0` other.o files.o ui.o -o final
+
+And here is the rule for ui.o:
+
+ui.o : ui.c ui.h
+	gcc `pkg-config --cflags sdl` `pkg-config --cflags gtk+-2.0` -c ui.c -o ui.o
+
+Feel free to add compiler options, variablize things, whatever.
+
+/************
+ * Example: *
+ ************/
+
+#include <stdlib.h>
+#include "ui.h"
+
+int main(int argc, char *argv[]){
+	initWindow(&argc, &argv, 512, 512, "Rainbows!!!");
+	int i, j, k = 0;
+	while(1){
+		for(i = 0; i < HEIGHT; i++){
+			for(j = 0; j < WIDTH; j++){
+				drawPixel(i % 256, j % 256, k, j, i);
+			}
+		}
+		updateScreen();
+		k = (k + 1) % 256;
+		doGtk();
+	}
+	exit(EXIT_SUCCESS);
+}

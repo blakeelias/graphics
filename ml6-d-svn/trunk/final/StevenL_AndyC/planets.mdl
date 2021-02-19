@@ -1,0 +1,58 @@
+frames 100
+push
+rotate x 90
+move 350 250 0
+sphere 0 0 0 50
+pop
+push
+move 120 0 0
+rotate y 360 mercknob
+rotate y 360 mercknob1
+rotate y 360 mercknob2
+rotate y 360 mercknob3
+rotate y 360 mercknob4
+rotate y 360 mercknob5
+rotate y 360 mercknob6
+rotate y 360 mercknob7
+rotate x 90
+move 350 250 0
+sphere 0 0 0 3.75
+pop
+push
+move 160 0 0
+rotate y 360 venusknob
+rotate y 360 venusknob1
+rotate y 360 venusknob2
+rotate x 90
+move 350 250 0
+sphere 0 0 0 8.75
+pop
+push
+move 200 0 0
+rotate y 360 earthknob
+rotate y 360 earthknob1
+rotate x 90
+move 350 250 0
+sphere 0 0 0 10
+pop
+push
+move 240 0 0
+rotate y 360 marsknob
+rotate x 90
+move 350 250 0
+sphere 0 0 0 5
+vary mercknob 0 12 0 1
+vary mercknob1 13 25 0 1
+vary mercknob2 26 38 0 1
+vary mercknob3 39 50 0 1
+vary mercknob4 51 63 0 1
+vary mercknob5 64 75 0 1
+vary mercknob6 75 88 0 1
+vary mercknob7 89 99 0 1
+vary venusknob 0 33 0 1
+vary venusknob1 34 67 0 1
+vary venusknob2 37 99 0 1
+vary earthknob 0 50 0 1
+vary earthknob1 50 99 0 1 
+vary marsknob 0 99 0 1
+basename planets

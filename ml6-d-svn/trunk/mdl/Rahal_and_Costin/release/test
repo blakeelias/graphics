@@ -1,0 +1,4 @@
+basename shape
+frames 1
+sphere 75 150 150 100
+save shape

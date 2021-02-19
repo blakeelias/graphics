@@ -1,0 +1,14 @@
+#ifndef STACK_H
+#define STACK_H
+
+#include "matrix.h"
+
+struct stack {
+  struct matrix m[];
+  struct matrix top;
+};
+
+void push(struct matrix m);
+struct matrix pop();
+
+#endif

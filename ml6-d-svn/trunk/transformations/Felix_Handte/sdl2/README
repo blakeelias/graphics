@@ -1,0 +1,48 @@
+/*********
+ * Files *
+ *********/
+
+
+
+Object
+	Points, etc. in local coordinate system.
+	Absolute position information
+
+Transform into absolute space
+
+Camera
+	Absolute position information
+
+
+
+
+Physics Engine
+	- Flight Model
+	- Collision Detection
+
+Networking
+
+Objects
+	- Attributes:
+		- Flight Characteristics
+		- Graphics
+	- Examples:
+		- Aircraft
+		- Missiles
+		- Explosions
+		
+OBJECT
+	- Geometry
+	- Graphics
+	FLYING THINGS
+		- Flight Characteristics
+		AIRPLANES
+		MISSILES
+		BULLETS
+	EFFECTS
+		- Time-to-live
+		SMOKE
+		EXPLOSIONS
+	GROUND
+	CLOUDS
+	SKYBOX

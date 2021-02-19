@@ -1,0 +1,18 @@
+We extended the MDL project with new topics from class
+
+The samples/ directory has example MDL scripts and image outputs in PPM and PNG.
+
+What works
+----------
+Shapes render properly (box, sphere, torus)
+multi-colored polygon faces (doritos!)
+transformations
+animation and knobs
+Lighting and flat shading
+Hidden surface removal: back face culling and Z buffering
+
+Bugs
+----
+Outer edge of sphere lights up weirdly when it should be darker (the surface normals must be wrong) -- less noticable with multi-colored faces
+Knobs seem to jump around when a vary command doesn't span the entire amount of frames
+Unable to implement Phong shading, despite a day of attempts.  Probably related to the first bug, incorect normal for some surfaces

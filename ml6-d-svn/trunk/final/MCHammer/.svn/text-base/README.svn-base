@@ -1,0 +1,10 @@
+My project is to implement the Graphics stuff 
+(making shapes, making polygons, shading, lighting, 3D rendering, etc.)
+into a java GUI so that the user can customize everything and make 2D and/or 3D drawings.
+
+It has the basic shapes and some shading. It is set up to do the lighting, but I confused
+myself one too many times and moved on to other things.
+There are a lot of bugs, most of which I tried to fix, but many of which I did not.
+I spent a lot of time (more than I expected to) just trying to get the gui to memorize
+the colors that were selected. I thought of a few simpleways which I was almost certain
+would work, but they didn't, and that wasted a lot of time.

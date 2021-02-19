@@ -1,0 +1,4 @@
+rotate x 30
+move 100 100 10
+torus 10.0 25.0 0 15.0 15.0
+save ourTest.png

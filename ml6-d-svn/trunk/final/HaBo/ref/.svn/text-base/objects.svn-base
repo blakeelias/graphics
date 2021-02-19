@@ -1,0 +1,36 @@
+object
+	*parentobject
+	transformfromparent
+	absolutecoords?
+	extents?
+	**childobjects?
+
+point
+	*parentobject
+	transformfromparent
+	absolutecoords
+	screencoords
+	color?
+
+line
+	*point1
+	*point2
+	color
+
+surface?
+	*point1
+	*point2
+	*point3
+	color
+
+transform
+	4x4 matrix
+
+color
+	a?
+	r
+	g
+	b
+
+camera
+	transformation

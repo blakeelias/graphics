@@ -1,0 +1,7 @@
+frames 50
+basename anim
+sphere 0 300 0 10
+portal 100 300 0 100 0 0 0 40 100 0 0 0 0 100
+move 1000 0 0 knob1
+vary knob1 1 50 0 1
+save anim

@@ -1,0 +1,197 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/425/trunk/mdl/HolmesPrasad/parseTables
+END
+opTween.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/373/trunk/mdl/HolmesPrasad/parseTables/opTween.java
+END
+opSavecs.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/373/trunk/mdl/HolmesPrasad/parseTables/opSavecs.java
+END
+opLine.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/425/trunk/mdl/HolmesPrasad/parseTables/opLine.java
+END
+opSetknobs.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/373/trunk/mdl/HolmesPrasad/parseTables/opSetknobs.java
+END
+opBox.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/425/trunk/mdl/HolmesPrasad/parseTables/opBox.java
+END
+opGeneraterayfiles.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/373/trunk/mdl/HolmesPrasad/parseTables/opGeneraterayfiles.java
+END
+opSaveknobs.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/373/trunk/mdl/HolmesPrasad/parseTables/opSaveknobs.java
+END
+opRotate.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/425/trunk/mdl/HolmesPrasad/parseTables/opRotate.java
+END
+opPop.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/425/trunk/mdl/HolmesPrasad/parseTables/opPop.java
+END
+opSave.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/425/trunk/mdl/HolmesPrasad/parseTables/opSave.java
+END
+SymTab.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/373/trunk/mdl/HolmesPrasad/parseTables/SymTab.java
+END
+opMove.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/425/trunk/mdl/HolmesPrasad/parseTables/opMove.java
+END
+opBasename.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/373/trunk/mdl/HolmesPrasad/parseTables/opBasename.java
+END
+opConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/373/trunk/mdl/HolmesPrasad/parseTables/opConstants.java
+END
+opTorus.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/425/trunk/mdl/HolmesPrasad/parseTables/opTorus.java
+END
+opShading.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/373/trunk/mdl/HolmesPrasad/parseTables/opShading.java
+END
+opFrames.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/373/trunk/mdl/HolmesPrasad/parseTables/opFrames.java
+END
+opAmbient.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/373/trunk/mdl/HolmesPrasad/parseTables/opAmbient.java
+END
+opVary.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/373/trunk/mdl/HolmesPrasad/parseTables/opVary.java
+END
+opFocal.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/373/trunk/mdl/HolmesPrasad/parseTables/opFocal.java
+END
+opSphere.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/425/trunk/mdl/HolmesPrasad/parseTables/opSphere.java
+END
+opScale.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/425/trunk/mdl/HolmesPrasad/parseTables/opScale.java
+END
+opTrans.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/373/trunk/mdl/HolmesPrasad/parseTables/opTrans.java
+END
+opCamera.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/373/trunk/mdl/HolmesPrasad/parseTables/opCamera.java
+END
+opSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/373/trunk/mdl/HolmesPrasad/parseTables/opSet.java
+END
+opMesh.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/373/trunk/mdl/HolmesPrasad/parseTables/opMesh.java
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/373/trunk/mdl/HolmesPrasad/parseTables/Makefile
+END
+opShape.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/373/trunk/mdl/HolmesPrasad/parseTables/opShape.java
+END
+opDisplay.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/373/trunk/mdl/HolmesPrasad/parseTables/opDisplay.java
+END
+opLight.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/373/trunk/mdl/HolmesPrasad/parseTables/opLight.java
+END
+opCode.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/425/trunk/mdl/HolmesPrasad/parseTables/opCode.java
+END
+opPush.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/425/trunk/mdl/HolmesPrasad/parseTables/opPush.java
+END

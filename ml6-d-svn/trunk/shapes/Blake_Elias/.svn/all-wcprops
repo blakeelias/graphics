@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/327/trunk/shapes/Blake_Elias
+END
+splines.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/327/trunk/shapes/Blake_Elias/splines.c
+END
+parametrics.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/252/trunk/shapes/Blake_Elias/parametrics.h
+END
+splines.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/327/trunk/shapes/Blake_Elias/splines.h
+END
+script
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/327/trunk/shapes/Blake_Elias/script
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/327/trunk/shapes/Blake_Elias/main.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/308/trunk/shapes/Blake_Elias/Makefile
+END
+draw.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/308/trunk/shapes/Blake_Elias/draw.c
+END
+draw_skeleton.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/252/trunk/shapes/Blake_Elias/draw_skeleton.c
+END
+draw.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/252/trunk/shapes/Blake_Elias/draw.h
+END
+ml6.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/252/trunk/shapes/Blake_Elias/ml6.h
+END
+display.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/252/trunk/shapes/Blake_Elias/display.c
+END
+matrix_skeleton.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/252/trunk/shapes/Blake_Elias/matrix_skeleton.c
+END
+matrix.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/252/trunk/shapes/Blake_Elias/matrix.h
+END
+display.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/252/trunk/shapes/Blake_Elias/display.h
+END
+parametrics.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/252/trunk/shapes/Blake_Elias/parametrics.c
+END

@@ -1,0 +1,12 @@
+frames 100
+push
+rotate x 90 xknob
+rotate y 90 yknob
+scale 4 4 4 scaleknob
+move 300 300 100 moveknob
+torus 0 0 0 10 5
+vary moveknob 0 100 0 1
+vary yknob 0 100 0 1
+vary xknob 0 75 0 1
+vary scaleknob 0 100 0 1
+basename test2

@@ -1,0 +1,318 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+#define R2D 180.0/M_PI
+#define D2R M_PI/180.0
+
+#include "matrix.h"
+
+/*-------------- struct matrix *new_matrix() --------------
+Inputs:  int rows
+         int cols 
+Returns: 
+
+Once allocated, access the matrix as follows:
+m->m[r][c]=something;
+if (m->lastcol)... 
+*/
+struct matrix *new_matrix(int rows, int cols) {
+  double **tmp;
+  int i;
+  struct matrix *m;
+
+  tmp = (double **)malloc(rows * sizeof(double *));
+  for (i=0;i<rows;i++) {
+      tmp[i]=(double *)malloc(cols * sizeof(double));
+    }
+
+  m=(struct matrix *)malloc(sizeof(struct matrix));
+  m->m=tmp;
+  m->rows = rows;
+  m->cols = cols;
+  m->lastcol = -1; //since it's empty.  When we add our next point, we add in column 0
+
+  return m;
+}
+
+
+/*-------------- void free_matrix() --------------
+Inputs:  struct matrix *m 
+Returns: 
+
+1. free individual rows
+2. free array holding row pointers
+3. free actual matrix
+*/
+void free_matrix(struct matrix *m) {
+
+  int i;
+  for (i=0;i<m->rows;i++) {
+      free(m->m[i]);
+    }
+  free(m->m);
+  free(m);
+}
+
+
+/*======== void grow_matrix() ==========
+Inputs:  struct matrix *m
+         int newcols 
+Returns: 
+
+Reallocates the memory for m->m such that it now has
+newcols number of collumns
+====================*/
+void grow_matrix(struct matrix *m, int newcols) {
+  int i;
+  for (i=0;i<m->rows;i++) {
+      m->m[i] = realloc(m->m[i],newcols*sizeof(double));
+    }
+  m->cols = newcols;
+}
+
+
+/*-------------- void print_matrix() --------------
+Inputs:  struct matrix *m 
+Returns: 
+
+print the matrix
+*/
+void print_matrix(struct matrix *m) {
+  int i,j;
+  for (i = 0; i < m->rows; i++) {
+    for (j = 0; j < m->cols; j++)
+      printf("%f ", m->m[i][j]);
+    printf("\n");
+  }
+}
+
+/*-------------- void ident() --------------
+Inputs:  struct matrix *m <-- assumes m is a square matrix
+Returns: 
+
+turns m in to an identity matrix
+*/
+void ident(struct matrix *m) {
+  int i,j;
+  for (i = 0; i < m->rows; i++) {
+    for (j = 0; j < m->cols; j++)
+      m->m[i][j] = 0;
+  }
+  for (i = 0; i < m->rows; i++)
+    m->m[i][i] = 1;
+}
+
+
+/*-------------- void scalar_mult() --------------
+Inputs:  double x
+         struct matrix *m 
+Returns: 
+
+multiply each element of m by x
+*/
+void scalar_mult(double x, struct matrix *m) {
+  int i,j;
+  for (i = 0; i < m->rows; i++) {
+    for (j = 0; j < m->cols; j++)
+      m->m[i][j] *= x;
+  }
+}
+
+
+/*-------------- void matrix_mult() --------------
+Inputs:  struct matrix *a
+         struct matrix *b 
+Returns: 
+
+a*b -> b
+*/
+void matrix_mult(struct matrix *a, struct matrix *b) {
+  struct matrix *temp;
+  temp = new_matrix(a->rows, b->cols);
+  int i,j,k;
+  double entry;
+  for (i = 0; i < temp->rows; i++) {
+    for (j = 0; j < temp->cols; j++) {
+      entry = 0;
+      for (k = 0; k < a->cols; k++) {
+	entry += (a->m[i][k] * b->m[k][j]);
+      }
+      temp->m[i][j] = entry;
+    }
+  }
+  copy_matrix(temp,b);
+  free_matrix(temp);
+}
+
+
+
+/*-------------- void copy_matrix() --------------
+Inputs:  struct matrix *a
+         struct matrix *b 
+Returns: 
+
+copy matrix a to matrix b: a and b must have the same number of rows
+*/
+void copy_matrix(struct matrix *a, struct matrix *b) {
+  int i,j;
+  grow_matrix(b, a->cols);
+  for (i = 0; i < a->rows; i++) {
+    for (j = 0; j < a->cols; j++) {
+      b->m[i][j] = a->m[i][j];
+    }
+  }
+}
+
+/*======== struct matrix * make_translate() ==========
+Inputs:  double x
+         double y
+         double z 
+Returns: The translation matrix created using x, y and z 
+as the translation offsets.
+====================*/
+struct matrix * make_translate(double x, double y, double z) {
+  struct matrix *a;
+  a = new_matrix(4,4);
+  ident(a);
+  a->m[0][3] = x;
+  a->m[1][3] = y;
+  a->m[2][3] = z;
+  return a;
+}
+
+/*======== struct matrix * make_scale() ==========
+Inputs:  double x
+         double y
+         double z 
+Returns: The translation matrix creates using x, y and z
+as the scale factors
+====================*/
+struct matrix * make_scale(double x, double y, double z) {
+  struct matrix *a;
+  a = new_matrix(4,4);
+  ident(a);
+  a->m[0][0] = x;
+  a->m[1][1] = y;
+  a->m[2][2] = z;
+  return a;
+}
+
+/*======== struct matrix * make_rotX() ==========
+Inputs:  double theta
+
+Returns: The rotation matrix created using theta as the 
+angle of rotation and X as the axis of rotation.
+====================*/
+struct matrix * make_rotX(double theta) {
+  struct matrix *a;
+  a = new_matrix(4,4);
+  ident(a);
+  a->m[1][1] = cos(theta * D2R);
+  a->m[1][2] = -1 * sin(theta * D2R);
+  a->m[2][1] = sin(theta * D2R);
+  a->m[2][2] = cos(theta * D2R);
+  return a;
+}
+
+/*======== struct matrix * make_rotY() ==========
+Inputs:  double theta
+         char c 
+Returns: The rotation matrix created using theta as the 
+angle of rotation and Y as the axis of rotation.
+====================*/
+struct matrix * make_rotY(double theta) {
+  struct matrix *a;
+  a = new_matrix(4,4);
+  ident(a);
+  a->m[0][0] = cos(theta * D2R);
+  a->m[0][2] = sin(theta * D2R);
+  a->m[2][0] = -1 * sin(theta * D2R);
+  a->m[2][2] = cos(theta * D2R);
+  return a;
+}
+
+/*======== struct matrix * make_rotZ() ==========
+Inputs:  double theta
+         char c 
+Returns: The rotation matrix created using theta as the 
+angle of rotation and Z as the axis of rotation.
+====================*/
+struct matrix * make_rotZ(double theta) {
+  struct matrix *a;
+  a = new_matrix(4,4);
+  ident(a);
+  a->m[0][0] = cos(theta * D2R);
+  a->m[0][1] = -1 * sin(theta * D2R);
+  a->m[1][0] = sin(theta * D2R);
+  a->m[1][1] = cos(theta * D2R);
+  return a;
+}
+
+int main() {
+  struct matrix *A,*B,*C, *P, *tmp;
+  //A = new_matrix(3,3);
+  //B = new_matrix(3,4);
+  //C = new_matrix(5,5);
+  
+  P = new_matrix(4,1);
+  P->m[0][0] = 2;
+  P->m[1][0] = 2;
+  P->m[2][0] = 3;
+  P->m[3][0] = 1;
+
+  tmp = make_translate(0.1,0.2,-10.5);
+  print_matrix(tmp);
+  matrix_mult(tmp,P);
+  print_matrix(P);
+  
+  /*A->m[0][0] = 14;
+  A->m[0][1] = 12;
+  A->m[0][2] = 4;
+  A->m[1][0] = 0;
+  A->m[1][1] = -2;
+  A->m[1][2] = -10;
+  A->m[2][0] = 2;
+  A->m[2][1] = 3;
+  A->m[2][2] = -1;
+  B->m[0][0] = 1;
+  B->m[0][1] = 0;
+  B->m[0][2] = -6;
+  B->m[0][3] = 1;
+  B->m[1][0] = 2;
+  B->m[1][1] = 5;
+  B->m[1][2] = 3;
+  B->m[1][3] = 0;
+  B->m[2][0] = -3;
+  B->m[2][1] = 8;
+  B->m[2][2] = 3;
+  B->m[2][3] = 10;
+  ident(C);*/
+
+  /*printf("Matrix A:\n");
+  print_matrix(A);
+  printf("\n");
+
+  printf("Scaling Matrix A by .5\n\n");
+  scalar_mult(.5,A);
+
+  printf("Matrix A:\n");
+  print_matrix(A);
+  printf("\n");
+
+  printf("Matrix B:\n");
+  print_matrix(B);
+  printf("\n");
+
+  printf("Multiplying Matrix A by Matrix B\n\n");
+  matrix_mult(A,B);
+
+  printf("Matrix B (product):\n");
+  print_matrix(B);
+  printf("\n");
+
+  printf("Matrix C (the identity):\n");
+  print_matrix(C);
+  printf("\n");*/
+}
+

@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/259/trunk/transformations/Felix_Handte
+END
+ui.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/237/trunk/transformations/Felix_Handte/ui.h
+END
+controls.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/237/trunk/transformations/Felix_Handte/controls.c
+END
+matrix.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/237/trunk/transformations/Felix_Handte/matrix.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/237/trunk/transformations/Felix_Handte/main.c
+END
+felixsdl.README
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/237/trunk/transformations/Felix_Handte/felixsdl.README
+END
+transformations.txt
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/237/trunk/transformations/Felix_Handte/transformations.txt
+END
+line.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/237/trunk/transformations/Felix_Handte/line.c
+END
+controls.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/237/trunk/transformations/Felix_Handte/controls.h
+END
+matrix.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/237/trunk/transformations/Felix_Handte/matrix.h
+END
+main.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/237/trunk/transformations/Felix_Handte/main.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/237/trunk/transformations/Felix_Handte/Makefile
+END
+line.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/237/trunk/transformations/Felix_Handte/line.h
+END
+ui.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/237/trunk/transformations/Felix_Handte/ui.c
+END

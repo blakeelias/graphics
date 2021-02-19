@@ -1,0 +1,17 @@
+frames 100
+basename anim
+push
+rotate x 30
+move 300 300 0
+rotate y 360 orbit
+push
+move 140 0 0
+scale 4 4 4 scale_knob
+rotate y 180 rotate_knob
+//rotate x 180 rotate_knob2
+sphere 0 0 0 150
+vary scale_knob 0 49 0 1
+vary scale_knob 49 99 1 0
+vary rotate_knob 0 99 0 1
+//vary rotate_knob2 0 99 0 1
+vary orbit 0 99 0 1

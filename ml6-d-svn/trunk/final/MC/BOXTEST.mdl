@@ -1,0 +1,10 @@
+frames 300
+basename BOX
+push
+rotate x 1
+rotate y 360 dy
+rotate z 360 dz
+move 200 200 0
+box 0 0 0 20 40 80
+vary dy 000 199 0 1
+vary dz 100 299 0 1

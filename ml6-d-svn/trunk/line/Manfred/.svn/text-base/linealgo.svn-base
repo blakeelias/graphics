@@ -1,0 +1,61 @@
+/*
+Line algo
+polarize for the lolz?
+CHK CARDINALIZATION
+ADD recursion type changer to ensure points 1, 2 are in the right order
+*/
+void draw_line(int x1, int y1, int x2, int y2, screen s, color c){
+
+if(x1>x2){
+fcn(x2,y1,x1,y2, s, c);
+return;
+}
+
+if(y1>y2){
+fcn(x1,y2,x2,y1,s,c);
+return;
+}
+
+int xeq=0;
+int yeq=0;
+
+if(x1==x2){++xeq;}
+if(y1==y2){++yeq;}
+
+if(xeq||yeq){
+while((x1!=x2)&&(y1!=y2)){
+plot(s,c,x1,y1);
+x1=x1+xeq;
+y1=y1+yeq;
+}
+return;
+}
+
+double slope;
+int rt=0;
+double offset;
+
+if((y2-y1)>(x2-x1)){//y>x
+slope=(x2-x1)/(y2-y1);
+offset=x1+.5;
+while(y1!=y2){
+plot(s,c,(int)x1,y1);
+offset=offset+slope
+y1++;
+}
+}
+
+else{ //x>y
+slope=(y2-y1)/(x2-x1);
+rt=1;
+offset=y1;
+while(x1!=x2){
+plot(s,c,x1,(int)y1);
+offset=offset+slope
+x1++;
+}
+}
+
+return;
+
+}

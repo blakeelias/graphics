@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/348/trunk/shapes/txu
+END
+matrix.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/282/trunk/shapes/txu/matrix.h
+END
+display.h
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/210/trunk/shapes/txu/display.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/210/trunk/shapes/txu/Makefile
+END
+draw.c
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/290/trunk/shapes/txu/draw.c
+END
+draw.h
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/282/trunk/shapes/txu/draw.h
+END
+ml6.h
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/266/trunk/shapes/txu/ml6.h
+END
+script
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/348/trunk/shapes/txu/script
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/282/trunk/shapes/txu/main.c
+END
+matrix.c
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/282/trunk/shapes/txu/matrix.c
+END
+display.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/210/trunk/shapes/txu/display.c
+END

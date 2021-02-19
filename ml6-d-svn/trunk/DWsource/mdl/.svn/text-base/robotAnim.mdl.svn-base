@@ -1,0 +1,35 @@
+frames 100
+basename robot
+//set body_y 0
+set body_x 0.1
+//body
+push
+move 200 300 0
+move 600 400 0 fly
+rotate y 270 body_y
+rotate x -90 body_x
+box 0 0 0 200 150 80
+//head
+push
+move 75 40 -50
+sphere 0 0 0 40
+pop
+//right arm
+push
+move 150 0 -15
+rotate z 90 right_arm
+box  0 0 0 175 40 50
+pop
+//left arm
+push
+rotate z -90 left_arm
+box  0 0 -15 175 -40 50
+vary right_arm 0 49 0 1
+vary left_arm 0 49 0 1
+//vary right_arm 50 99 1 0
+//vary left_arm 50 99 1 0
+vary body_y 0 49 0 1
+//vary body_y 50 99 1 0
+vary fly 50 99 0 1
+
+

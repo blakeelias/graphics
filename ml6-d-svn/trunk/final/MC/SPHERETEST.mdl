@@ -1,0 +1,8 @@
+frames 600
+basename SPHERE
+push
+rotate x 360 kr
+rotate y 360 kd
+sphere 0 0 0 300 
+vary kr 0 299 0 1
+vary kd 0 599 0 1

@@ -1,0 +1,281 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/745/trunk/mdl/Chan_Elias
+END
+mdl
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/582/trunk/mdl/Chan_Elias/mdl
+END
+symtab.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/549/trunk/mdl/Chan_Elias/symtab.c
+END
+parser.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/368/trunk/mdl/Chan_Elias/parser.h
+END
+symtab.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/549/trunk/mdl/Chan_Elias/symtab.h
+END
+display.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/582/trunk/mdl/Chan_Elias/display.c
+END
+simple_test
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/582/trunk/mdl/Chan_Elias/simple_test
+END
+matrix_skeleton.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/379/trunk/mdl/Chan_Elias/matrix_skeleton.c
+END
+display.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/379/trunk/mdl/Chan_Elias/display.h
+END
+symtab.o
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/560/trunk/mdl/Chan_Elias/symtab.o
+END
+y.tab.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/379/trunk/mdl/Chan_Elias/y.tab.c
+END
+splines.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/379/trunk/mdl/Chan_Elias/splines.c
+END
+mdl.tab.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/368/trunk/mdl/Chan_Elias/mdl.tab.c
+END
+y.tab.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/379/trunk/mdl/Chan_Elias/y.tab.h
+END
+splines.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/379/trunk/mdl/Chan_Elias/splines.h
+END
+knobTest.mdl
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/583/trunk/mdl/Chan_Elias/knobTest.mdl
+END
+MDL.spec
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/368/trunk/mdl/Chan_Elias/MDL.spec
+END
+robotAnim.mdl
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/583/trunk/mdl/Chan_Elias/robotAnim.mdl
+END
+mdl.l
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/368/trunk/mdl/Chan_Elias/mdl.l
+END
+lex.yy.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/379/trunk/mdl/Chan_Elias/lex.yy.c
+END
+my_main.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/541/trunk/mdl/Chan_Elias/my_main.c
+END
+matrix_stack.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/544/trunk/mdl/Chan_Elias/matrix_stack.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/512/trunk/mdl/Chan_Elias/Makefile
+END
+draw.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/744/trunk/mdl/Chan_Elias/draw.c
+END
+test
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/368/trunk/mdl/Chan_Elias/test
+END
+matrix_stack.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/544/trunk/mdl/Chan_Elias/matrix_stack.h
+END
+draw_skeleton.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/379/trunk/mdl/Chan_Elias/draw_skeleton.c
+END
+draw.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/745/trunk/mdl/Chan_Elias/draw.h
+END
+cmd_processor.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/582/trunk/mdl/Chan_Elias/cmd_processor.c
+END
+mdl.y
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/368/trunk/mdl/Chan_Elias/mdl.y
+END
+ml6.h
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/379/trunk/mdl/Chan_Elias/ml6.h
+END
+matrix.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/368/trunk/mdl/Chan_Elias/matrix.c
+END
+my_main.o
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/560/trunk/mdl/Chan_Elias/my_main.o
+END
+print_pcode.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/368/trunk/mdl/Chan_Elias/print_pcode.c
+END
+matrix.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/377/trunk/mdl/Chan_Elias/matrix.h
+END
+parametrics.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/379/trunk/mdl/Chan_Elias/parametrics.c
+END
+varyTest.mdl
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/583/trunk/mdl/Chan_Elias/varyTest.mdl
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/582/trunk/mdl/Chan_Elias/README
+END
+cmd_processor.o
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/560/trunk/mdl/Chan_Elias/cmd_processor.o
+END
+parametrics.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/379/trunk/mdl/Chan_Elias/parametrics.h
+END
+matrix.o
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/379/trunk/mdl/Chan_Elias/matrix.o
+END
+main.c~
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/379/trunk/mdl/Chan_Elias/main.c~
+END
+globe.mdl
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/583/trunk/mdl/Chan_Elias/globe.mdl
+END
+simpleTest.mdl
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/583/trunk/mdl/Chan_Elias/simpleTest.mdl
+END
+script
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/379/trunk/mdl/Chan_Elias/script
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/379/trunk/mdl/Chan_Elias/main.c
+END
+PROJECT
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/368/trunk/mdl/Chan_Elias/PROJECT
+END

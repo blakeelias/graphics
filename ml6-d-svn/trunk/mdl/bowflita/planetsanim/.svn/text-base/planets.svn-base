@@ -1,0 +1,12 @@
+basename planets
+frames 50
+
+rotate y 360 knob2
+move 250 250 0 knob1
+
+sphere -200 0 0 14
+sphere 0 0 0 50
+
+set knob1 1
+vary knob2 0 50	0 1
+save planetes
